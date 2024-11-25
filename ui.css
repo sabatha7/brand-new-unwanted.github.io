@@ -1,0 +1,206 @@
+.wrap-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.tab-content {
+  max-width: 100vw; /* set max-width to 100% of viewport width */
+  margin: 0 auto; /* center horizontally */
+  box-sizing: border-box; /* include padding and border in width calculation */
+}
+
+.nav-tabs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    background-color: #fff;
+    width: 100%;
+    z-index: 1;
+}
+
+.nav-tabs select {
+    -webkit-tap-highlight-color: transparent;
+    outline: none; /* remove blue outline border */
+    border: none; /* remove border from select elements */
+    border-radius: 63px;
+}
+
+.nav-tabs select:focus, .selection-options select:focus, .selection-options select:active {
+    outline: none; /* remove blue outline border */
+    border: none; /* remove border from select elements */
+    background: transparent;
+}
+
+.top-row {
+    top: 33px;
+    position: fixed;
+    width: 100%;
+}
+
+.options-currency-selection {
+    position: absolute;
+    right: 0;
+    margin-right: 13px;
+    border-radius: 63px;
+    padding: 3px;
+    border: 1px solid #ccc;
+    background: #fff;
+}
+
+.options-currency-selection select {
+    padding: 11px;
+    cursor: pointer;
+    width: 97px;
+    display: inline-block;
+    text-align: center;
+    font-weight: bold;
+    padding: 11px;
+    background: transparent;
+}
+
+.nav-option {
+    position: absolute;
+    left: 0;
+    margin-left: 13px;
+    background: #f3efef;
+    color: #9b9797;
+    border-radius: 63px;
+    padding: 3px;
+}
+
+.nav-tabs input[type="radio"] {
+    display: none;
+}
+
+.nav-tabs label {
+    padding: 11px;
+    cursor: pointer;
+    width: 37px;
+    display: inline-block;
+    text-align: center;
+    font-weight: bold;
+    -webkit-tap-highlight-color: transparent;
+    border-radius: 63px;
+}
+
+.nav-tabs input[type="radio"]:checked + label {
+    font-weight: normal;
+    color: #000;
+    border-radius: 35px;
+    border: 1px solid #ccc;
+    background-color: #fff; /* example background color for selected item */
+}
+
+.tab-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 90px;
+}
+
+.tab-pane {
+    display: none;
+    width: 100%; /* make the tab pane full-width */
+}
+
+.tab-pane.active {
+    display: block;
+}
+
+.tab-content {
+    margin-top: 50px; /* add some space between the nav tabs and the tab content */
+    width: 100%;
+}
+
+.buyer-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.buyer-list li {
+    margin-bottom: 20px;
+}
+
+.buyer-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.buyer-info h3 {
+    margin-top: 0;
+}
+
+.buyer-info p {
+    margin-bottom: 10px;
+}
+
+.selection-row {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+    max-width: 100%;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+    flex-shrink: inherit;
+    overflow: auto;
+    overflow-y: scroll;
+    scrollbar-width: thin; /* For Firefox */
+}
+
+.selection-row::-webkit-scrollbar {
+    width: 8px; /* For WebKit Browsers */
+    display: block; /* Ensure the scrollbar is always visible */
+}
+
+.selection-row-filter {
+    position: fixed;
+    top: 113px;
+}
+
+.selection-options {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.selection-options select {
+    float: left;
+}
+
+.dynamic-island {
+    position: fixed;
+    bottom: 19px;
+    left: 17px;
+    right: 17px;
+    display: flex;
+    justify-content: space-around;
+    background-color: #fff;
+    border-radius: 63px;
+    padding: 10px;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.dynamic-island button {
+    padding: 10px 20px;
+    background-color: #f3efef;
+    border: none;
+    border-radius: 63px;
+    color: #9b9797;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.dynamic-island button:hover {
+    background-color: #e0dddd;
+    color: #000;
+}
