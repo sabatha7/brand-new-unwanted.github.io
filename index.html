@@ -7,14 +7,23 @@
     <link rel="stylesheet" href="ui.css">
 </head>
 <body>
-    <div class="wrap-page">
+    <div class="row-dynamic-island">
+        <div class="dynamic-island">
+            <button id="p2p">P2P</button>
+            <button id="orders">Orders</button>
+            <button id="ads">Ads</button>
+            <button id="chat">Chat</button>
+            <button id="profile">Profile</button>
+        </div>
+    </div>
+    <div class="wrap-page wrap-p2p-page">
         <div class="nav-tabs">
             <div class="top-row">
-                <div class="nav-option">
-                    <input type="radio" id="buy-offer-list" name="tab" checked>
-                    <label for="buy-offer-list">sell</label>
-                    <input type="radio" id="create-advert" name="tab">
-                    <label for="create-advert">buy</label>
+                <div class="p2p-nav-option">
+                    <input type="radio" id="buy-market-opt" name="tab" checked>
+                    <label for="buy-market-opt">sell</label>
+                    <input type="radio" id="sell-market-opt" name="tab">
+                    <label for="sell-market-opt">buy</label>
                 </div>
                 <div class="options-currency-selection">
                     <select name="currency">
@@ -53,34 +62,209 @@
         </div>
         <div class="tab-content">
             <div class="tab-pane active" id="buy-offer-list-content">
-                <h2>Buy Offer List</h2>
                 <ul class="buyer-list">
                     <li>
                         <div class="buyer-info">
-                            <h3>Buyer Name</h3>
-                            <p>0 transactions 0% completion rate 0% good rating</p>
-                            <p>Allocated Spending Price: R500</p>
-                            <p>Target Brand: Markham</p>
-                            <p>Collect In store</p>
+                            <h3>cryptosolituded</h3>
+                            <small>0 transactions · 0% completion rate · 0% good rating</small>
+                            <small>Markham</small>
+                            <p>Available <strong>R14000</strong></p>
+                            <p class="buyer-info-delivery-method">Collect In store</p>
                         </div>
                     </li>
                 </ul>
             </div>
-            <div class="tab-pane" id="create-advert-content">
-                <h2>Create Marketplace Advert</h2>
-            </div>
-        </div>
-        <div class="row-dynamic-island">
-            <div class="dynamic-island">
-                <button id="p2p-active">P2P: Active</button>
-                <button id="orders">Orders</button>
-                <button id="my-ads">My Ads</button>
-                <button id="chat">Chat</button>
-                <button id="profile">Profile</button>
+            <div class="tab-pane" id="sell-offer-list-content">
+                <ul class="buyer-list">
+                    <li>
+                        <div class="buyer-info">
+                            <h3>cryptosolitude</h3>
+                            <small>0 transactions · 0% completion rate · 0% good rating</small>
+                            <small>Markham</small>
+                            <p>Available <strong>R24000</strong></p>
+                            <p class="buyer-info-delivery-method">Collect In store</p>
+                        </div>
+                    </li>
+                </ul>
             </div>
         </div>
     </div>
-    <script src="nav-tab.js" defer></script>
+    <div class="wrap-page wrap-orders-page">
+        <div class="orders-top-row">
+            <div class="orders-nav-option">
+                <input type="radio" id="pending-orders-radio" name="orders-tab" checked>
+                <label for="pending-orders-radio">Pending</label>
+                <input type="radio" id="completed-orders-radio" name="orders-tab">
+                <label for="completed-orders-radio">Completed</label>
+            </div>
+        </div>
+        <div class="tab-content">
+            <div class="tab-pane active" id="pending-orders-content">
+                <div class="orders-rows-filter">
+                    <div class="selection-options">
+                        <select name="store">
+                            <option value="all">All</option>
+                            <option value="fulfilled">In progress</option>
+                            <option value="canceled">In dispute</option>
+                        </select>
+                    </div>
+                </div>
+                <ul>
+                    <li>
+                        <div class="order-info">
+                            <h3>Sell Markham</h3>
+                            <small>11/25/2024, 11h15</small>
+                            <p>Quantity 14000 ZAR</p>
+                            <p>bus***@yahoo.com</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="tab-pane" id="completed-orders-content">
+                <div class="orders-rows-filter">
+                    <div class="selection-options">
+                        <select name="store">
+                            <option value="all">All</option>
+                            <option value="fulfilled">Fulfilled</option>
+                            <option value="canceled">Canceled</option>
+                        </select>
+                    </div>
+                </div>
+                <ul>
+                    <li>
+                        <div class="order-info">
+                            <h3>Buy Markham</h3>
+                            <small>11/25/2024, 20h03</small>
+                            <p>Quantity 14000 ZAR</p>
+                            <p>bus***@yahoo.com</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="wrap-page wrap-ads-page">
+        <div class="tab-content">
+            <div class="orders-top-row">
+                <div class="orders-nav-option">
+                    <input type="radio" id="" name="" checked>
+                    <label for="">Pending</label>
+                    <input type="radio" id="" name="">
+                    <label for="">Completed</label>
+                </div>
+            </div>
+            <div class="tab-pane active" id="ads-existing-content">
+                <div class="ads-rows-filter">
+                    <div class="selection-options">
+                        <select name="store">
+                            <option value="" selected hidden>Type</option>
+                            <option value="all">All</option>
+                            <option value="fulfilled">Buy</option>
+                            <option value="canceled">Sell</option>
+                        </select>
+                        <select name="store">
+                            <option value="" selected hidden>Status</option>
+                            <option value="all">All</option>
+                            <option value="fulfilled">Active</option>
+                            <option value="canceled">Inactive</option>
+                        </select>
+                    </div>
+                </div>
+                <ul>
+                    <li>
+                        <div class="ad-info">
+                            <h3>Sell Markham</h3>
+                            <small>11/25/2024, 11h15</small>
+                            <p>Quantity 14000 ZAR</p>
+                            <p>bus***@yahoo.com</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="tab-pane" id="create-ads-content">
+                <form id="create-advert-form">
+                    <div class="form-step">
+                        <div>
+                            <label for="currency">Currency</label>
+                            <select id="currency" name="currency">
+                                <option value="zar">ZAR - South African Rand</option>
+                                <option value="vnd">VND - Vietnamese Dong</option>
+                                <option value="gbp">GBP - Pounds Sterling</option>
+                                <option value="aoa">AOA - Angolan Kwanza</option>
+                                <option value="xof">XOF - West African CFA Franc</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="store">Store</label>
+                            <select id="store" name="store">
+                                <option value="" selected hidden>Outlet</option>
+                                <option value="truworths">Truworths</option>
+                                <option value="identity">Identity</option>
+                                <option value="woolworths">Woolworths</option>
+                                <option value="makro">Makro</option>
+                                <option value="game">Game</option>
+                                <option value="tfg-limited">TFG Limited</option>
+                                <option value="mr-price">Mr Price</option>
+                                <option value="edgars">Edgars</option>
+                                <option value="incredible-connection">Incredible Connection</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="amount">Amount</label>
+                            <input type="number" id="amount" name="amount" min="0" step="100" required>
+                        </div>
+                        <div>
+                            <label for="marketplace-type">Marketplace type</label>
+                            <select id="marketplace-type" name="marketplace-type">
+                                <option value="public">Public</option>
+                                <option value="private">Private</option>
+                            </select>
+                        </div>
+                        <button type="button" id="continue-button">Continue</button>
+                    </div>
+                    <div class="form-step">
+                        <div>
+                            <label for="transaction-settings">Transaction settings</label>
+                            <select id="transaction-settings" name="transaction-settings">
+                                <option value="escrow">Escrow</option>
+                                <option value="release">Release</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="terms-of-trade">Terms of trade</label>
+                            <textarea id="terms-of-trade" name="terms-of-trade"></textarea>
+                        </div>
+                        <div>
+                            <label for="chat-auto-reply">Chat auto reply</label>
+                            <textarea id="chat-auto-reply" name="chat-auto-reply"></textarea>
+                        </div>
+                        <div>
+                            <button type="button" id="preview-button">Previous step</button>
+                            <button type="submit" id="publish-button">Publish</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="wrap-page wrap-chat-page">
+        <div class="tab-content">
+            <div class="tab-pane" id="chat-content">
+                <ul>
+                    <li>Chat 1</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="wrap-page wrap-profile-page">
+        <div class="tab-content">
+            <div class="tab-pane" id="profile-content">
+            </div>
+        </div>
+    </div>
+    <script src="p2p-tab-content-toggle.js" defer></script>
+    <script src="dynamic-island.js" defer></script>
+    <script src="orders-tab-content-toggle.js" defer></script>
 </body>
 </html>
 

@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px;
+    padding: 2.1px;
 }
 
 .tab-content {
@@ -40,6 +40,12 @@
     width: 100%;
 }
 
+.orders-top-row {
+    top: 33px;
+    position: fixed;
+    width: 100%;
+}
+
 .options-currency-selection {
     position: absolute;
     right: 0;
@@ -61,7 +67,17 @@
     background: transparent;
 }
 
-.nav-option {
+.p2p-nav-option {
+    position: absolute;
+    left: 0;
+    margin-left: 13px;
+    background: #f3efef;
+    color: #9b9797;
+    border-radius: 63px;
+    padding: 3px;
+}
+
+.orders-nav-option {
     position: absolute;
     left: 0;
     margin-left: 13px;
@@ -99,6 +115,7 @@
     flex-direction: column;
     align-items: center;
     padding-top: 90px;
+    width: 100%;
 }
 
 .tab-pane {
@@ -128,14 +145,19 @@
 .buyer-info {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: left;
     padding: 20px;
-    border: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
     border-radius: 5px;
 }
 
 .buyer-info h3 {
     margin-top: 0;
+}
+
+.buyer-info-delivery-method {
+    border-left: 4px solid #c9ff36;
+    padding: 4px;
 }
 
 .buyer-info p {
@@ -188,19 +210,32 @@
     padding: 10px;
     box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
     z-index: 1000;
+    overflow: auto;
 }
 
 .dynamic-island button {
-    padding: 10px 20px;
-    background-color: #f3efef;
+    padding: 5px;
+    background-color: transparent;
     border: none;
     border-radius: 63px;
     color: #9b9797;
     font-weight: bold;
     cursor: pointer;
+    font-size: 9.13px !important;
+    width: 38.3px;
+    min-width: 38.3px;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .dynamic-island button:hover {
-    background-color: #e0dddd;
+    background-color: transparent;
     color: #000;
+}
+
+.wrap-page-hidden {
+    display: none;
+}
+
+.lone-tab-pane {
+    display: block;
 }
