@@ -49,7 +49,7 @@
 .options-currency-selection {
     position: absolute;
     right: 0;
-    margin-right: 13px;
+    margin-right: 23.1px;
     border-radius: 63px;
     padding: 3px;
     border: 1px solid #ccc;
@@ -69,8 +69,8 @@
 
 .p2p-nav-option {
     position: absolute;
-    left: 0;
-    margin-left: 13px;
+    left: 23.1px;
+    margin-left: 0;
     background: #f3efef;
     color: #9b9797;
     border-radius: 63px;
@@ -146,7 +146,8 @@
     display: flex;
     flex-direction: column;
     align-items: left;
-    padding: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
     border-bottom: 1px solid #ccc;
     border-radius: 5px;
 }
@@ -196,18 +197,20 @@
 
 .selection-options select {
     float: left;
+    padding-left: 23.1px !important;
 }
 
 .dynamic-island {
     position: fixed;
     bottom: 19px;
-    left: 17px;
-    right: 17px;
+    left: 20px;
+    right: 20px;
     display: flex;
     justify-content: space-around;
     background-color: #fff;
     border-radius: 63px;
-    padding: 10px;
+    padding-top: 10px;
+    padding-top: 10px;
     box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
     z-index: 1000;
     overflow: auto;
@@ -238,4 +241,12 @@
 
 .lone-tab-pane {
     display: block;
+}
+
+.profile-picture {
+    border-radius: 100%;
+}
+
+.padding-for-lower-app-bar {
+    padding-bottom: 80px;
 }

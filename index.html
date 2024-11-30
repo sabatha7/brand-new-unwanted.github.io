@@ -65,9 +65,9 @@
                 <ul class="buyer-list">
                     <li>
                         <div class="buyer-info">
-                            <h3>cryptosolituded</h3>
+                            <h3>cryptosolitude</h3>
                             <small>0 transactions · 0% completion rate · 0% good rating</small>
-                            <small>Markham</small>
+                            <small>TFG Limited</small>
                             <p>Available <strong>R14000</strong></p>
                             <p class="buyer-info-delivery-method">Collect In store</p>
                         </div>
@@ -145,12 +145,21 @@
     </div>
     <div class="wrap-page wrap-ads-page">
         <div class="tab-content">
+            <button>Create</button>
             <div class="orders-top-row">
-                <div class="orders-nav-option">
-                    <input type="radio" id="" name="" checked>
-                    <label for="">Pending</label>
-                    <input type="radio" id="" name="">
-                    <label for="">Completed</label>
+                <div>
+                    <p>Online</p>
+                    <small>Available to accept orders for all your active ads.</small>
+                </div>
+                <div>
+                    <p>Offline</p>
+                    <small>Unavailable to accept orders.</small>
+                </div>
+                <div class="ads-nav-option">
+                    <input type="radio" id="ads-status-offline" name="ads-status" />
+                    <label for="ads-status-offline">Offline</label>
+                    <input type="radio" id="ads-status-online" name="ads-status" checked />
+                    <label for="ads-status-online">Online</label>
                 </div>
             </div>
             <div class="tab-pane active" id="ads-existing-content">
@@ -249,9 +258,24 @@
     </div>
     <div class="wrap-page wrap-chat-page">
         <div class="tab-content">
+            <div class="chats-top-row">
+                <div class="chats-nav-option">
+                    <i class="fa fa-search"></i>
+                    <form action="" class="search-bar">
+                        <input type="text" id="search-bar" name="search-bar" placeholder="Search...">
+                    </form>
+                </div>
+            </div>
             <div class="tab-pane" id="chat-content">
                 <ul>
-                    <li>Chat 1</li>
+                    <li>
+                        <div class="chat-info">
+                            <div class="profile-picture-wrapper">
+                                <img class="profile-picture" src="https://picsum.photos/50">
+                            </div>
+                            <p>luc***@gmail.com</p>
+                        </div>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -259,9 +283,59 @@
     <div class="wrap-page wrap-profile-page">
         <div class="tab-content">
             <div class="tab-pane" id="profile-content">
+                <ul>
+                    <li>
+                        <div class="profile-info">
+                            <div class="profile-picture-wrapper">
+                                <img class="profile-picture" src="https://picsum.photos/50">
+                            </div>
+                            <p>luc***@gmail.com</p>
+                            <small>online</small>
+                            <p>South Africa | Joined on: 09/20/2024</p>
+                            <p>ID verified Mobile Email</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="profile-info">
+                            <h3>Info</h3>
+                            <small>Total completed orders</small>
+                            <p>4</p>
+                            <small>Completion rate(%)</small>
+                            <p>80.00%</p>
+                            <small>Avg. payment time</small>
+                            <p>24m 45s</p>
+                            <small>Positive feedback(%)</small>
+                            <p>N/A</p>
+                            <small>More info ></small>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="profile-info">
+                        <li>
+                            <div class="profile-info-buttons">
+                                <button id="payment">Payment</button>
+                                <button id="price-alerts">Price Alerts</button>
+                                <button id="settings">Settings</button>
+                                <button id="reviews">Reviews</button>
+                                <button id="following-blocked-reported">Following/Blocked/Reported</button>
+                            </div>
+                        </li>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="profile-info">
+                            <div class="profile-info-buttons">
+                                <button id="customer-support">Customer Support</button>
+                                <button id="become-super-merchant">Become a Super Merchant</button>
+                                <button id="p2p-guide">P2P Guide</button>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
             </div>
         </div>
     </div>
+    <div class="padding-for-lower-app-bar"></div>
     <script src="p2p-tab-content-toggle.js" defer></script>
     <script src="dynamic-island.js" defer></script>
     <script src="orders-tab-content-toggle.js" defer></script>
