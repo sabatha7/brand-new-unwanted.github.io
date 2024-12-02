@@ -1,0 +1,33 @@
+.chat-info {
+    align-items: left;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-bottom: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.chat-info {
+  display: flex;
+  flex-direction: row;
+}
+
+.profile-picture {
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+}
+
+.profile-picture-online {
+    border: 3.7px dashed #17e68f;
+}
+
+.chat-info-chat-details {
+    margin-left: 20px;
+}
+
+.profile-picture-wrapper {
+    min-height: 100% !important;
+    align-items: center;
+    padding-top: 17px;
+}
+

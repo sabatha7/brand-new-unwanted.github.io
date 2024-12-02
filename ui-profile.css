@@ -1,0 +1,29 @@
+.profile-info {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-bottom: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.profile-info-info {
+    display: flex;
+    flex-direction: row;
+    min-width: 100%;
+}
+
+.profile-info-info-col {
+    width: 50%;
+    text-align: left;
+}
+
+.profile-info-more-btn {
+    min-width: 100%;
+    text-align: center;
+}
+
+.profile-info-buttons-div, .profile-info-buttons-btn {
+    min-width: 100% !important;
+}

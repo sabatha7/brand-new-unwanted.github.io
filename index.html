@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="ui.css">
+    <link rel="stylesheet" href="ui-orders.css">
+    <link rel="stylesheet" href="ui-ads.css">
+    <link rel="stylesheet" href="ui-chats.css">
+    <link rel="stylesheet" href="ui-profile.css">
 </head>
 <body>
     <div class="row-dynamic-island">
@@ -69,7 +73,7 @@
                             <small>0 transactions · 0% completion rate · 0% good rating</small>
                             <small>TFG Limited</small>
                             <p>Available <strong>R14000</strong></p>
-                            <p class="buyer-info-delivery-method">Collect In store</p>
+                            <p class="info-delivery-method">Collect In store</p>
                         </div>
                     </li>
                     <li>
@@ -78,7 +82,7 @@
                             <small>1 transactions · 100% completion rate · 100% good rating</small>
                             <small>TFG Limited</small>
                             <p>Available <strong>R4000</strong></p>
-                            <p class="buyer-info-delivery-method">Collect In store</p>
+                            <p class="info-delivery-method">Collect In store</p>
                         </div>
                     </li>
                 </ul>
@@ -91,7 +95,7 @@
                             <small>0 transactions · 0% completion rate · 0% good rating</small>
                             <small>Markham</small>
                             <p>Available <strong>R24000</strong></p>
-                            <p class="buyer-info-delivery-method">Collect In store</p>
+                            <p class="info-delivery-method">Collect In store</p>
                         </div>
                     </li>
                 </ul>
@@ -110,42 +114,42 @@
         <div class="tab-content">
             <div class="tab-pane active" id="pending-orders-content">
                 <div class="orders-rows-filter">
-                    <div class="selection-options">
-                        <select name="store">
+                    <div class="selection-options order-type-of">
+                        <select class="order-type-of-select" name="order-type-of-select">
                             <option value="all">All</option>
                             <option value="fulfilled">In progress</option>
                             <option value="canceled">In dispute</option>
                         </select>
                     </div>
                 </div>
-                <ul>
+                <ul class="order-list">
                     <li>
                         <div class="order-info">
-                            <h3>Sell Markham</h3>
+                            <div><h3>Sell Markham</h3><small>Fulfilled ></small></div>
                             <small>11/25/2024, 11h15</small>
-                            <p>Quantity 14000 ZAR</p>
-                            <p>bus***@yahoo.com</p>
+                            <div><small>Quantity 5 items</small><p>14000 ZAR</p></div>
+                            <div><p>bus***@yahoo.com</p><button>chat</button></div>
                         </div>
                     </li>
                 </ul>
             </div>
             <div class="tab-pane" id="completed-orders-content">
                 <div class="orders-rows-filter">
-                    <div class="selection-options">
-                        <select name="store">
+                    <div class="selection-options order-type-of">
+                        <select class="order-type-of-select" name="order-type-of-select">
                             <option value="all">All</option>
                             <option value="fulfilled">Fulfilled</option>
                             <option value="canceled">Canceled</option>
                         </select>
                     </div>
                 </div>
-                <ul>
+                <ul class="order-list">
                     <li>
                         <div class="order-info">
-                            <h3>Buy Markham</h3>
-                            <small>11/25/2024, 20h03</small>
-                            <p>Quantity 14000 ZAR</p>
-                            <p>bus***@yahoo.com</p>
+                            <div><h3>Sell Markham</h3><small>Fulfilled ></small></div>
+                            <small>11/25/2024, 11h15</small>
+                            <div><small>Quantity 5 items</small><p>14000 ZAR</p></div>
+                            <div><p>bus***@yahoo.com</p><button>chat</button></div>
                         </div>
                     </li>
                 </ul>
@@ -154,26 +158,27 @@
     </div>
     <div class="wrap-page wrap-ads-page">
         <div class="tab-content">
-            <button>Create</button>
-            <div class="orders-top-row">
-                <div>
-                    <p>Online</p>
-                    <small>Available to accept orders for all your active ads.</small>
-                </div>
-                <div>
-                    <p>Offline</p>
-                    <small>Unavailable to accept orders.</small>
-                </div>
-                <div class="ads-nav-option">
-                    <input type="radio" id="ads-status-offline" name="ads-status" />
-                    <label for="ads-status-offline">Offline</label>
-                    <input type="radio" id="ads-status-online" name="ads-status" checked />
-                    <label for="ads-status-online">Online</label>
+            <div class="ads-top-row">
+                <div class="ads-top-row-div-wrap">
+                    <div class="ads-status-info ads-status-info-at-work">
+                        <small>Online</small><br/>
+                        <small class="ads-status-info-small">Available to accept orders for all your active ads.</small>
+                    </div>
+                    <div class="ads-status-info ads-status-info-non-available ads-status-info-inactive">
+                        <small>Offline</small><br/>
+                        <small class="ads-status-info-small">Unavailable to accept orders.</small>
+                    </div>
+                    <div class="ads-nav-option">
+                        <input type="radio" id="ads-status-offline" name="ads-status" />
+                        <label for="ads-status-offline"><!--Offline--></label>
+                        <input type="radio" id="ads-status-online" name="ads-status" checked />
+                        <label for="ads-status-online"><!--Online--></label>
+                    </div>
                 </div>
             </div>
             <div class="tab-pane active" id="ads-existing-content">
-                <div class="ads-rows-filter">
-                    <div class="selection-options">
+                <div class="ads-selection-row ads-rows-filter">
+                    <div class="ads-selection-options">
                         <select name="store">
                             <option value="" selected hidden>Type</option>
                             <option value="all">All</option>
@@ -188,17 +193,23 @@
                         </select>
                     </div>
                 </div>
-                <ul>
+                <ul class="ads-list">
                     <li>
-                        <div class="ad-info">
-                            <h3>Sell Markham</h3>
-                            <small>11/25/2024, 11h15</small>
-                            <p>Quantity 14000 ZAR</p>
-                            <p>bus***@yahoo.com</p>
+                        <div class="ads-info">
+                            <h3>Sell Markham / ZAR</h3>
+                            <p>R 4000.00</p>
+                            <small>Available <strong>0.00 ZAR</strong> Out of stock</small>
+                            <small>Order limit <strong>4000 ZAR</strong></small>
+                            <div>
+                                <p class="info-delivery-method">Collect In store</p>
+                                <button class="ads-info-active-indicator"><small class="ads-info-active-indicator-dot">·</small> Inactive</small></button>
+                                <button>Edit</button>
+                            </div>
                         </div>
                     </li>
                 </ul>
             </div>
+            <button>Create</button>
             <div class="tab-pane" id="create-ads-content">
                 <form id="create-advert-form">
                     <div class="form-step">
@@ -280,9 +291,12 @@
                     <li>
                         <div class="chat-info">
                             <div class="profile-picture-wrapper">
-                                <img class="profile-picture" src="https://picsum.photos/50">
+                                <img class="profile-picture profile-picture-online" src="https://picsum.photos/50">
                             </div>
-                            <p>luc***@gmail.com</p>
+                            <div class="chat-info-chat-details">
+                                <p>luc***@gmail.com</p>
+                                <small>hi what is my order limit</small>
+                            </div>
                         </div>
                     </li>
                 </ul>
@@ -296,7 +310,7 @@
                     <li>
                         <div class="profile-info">
                             <div class="profile-picture-wrapper">
-                                <img class="profile-picture" src="https://picsum.photos/50">
+                                <img class="profile-picture profile-picture-online" src="https://picsum.photos/50">
                             </div>
                             <p>luc***@gmail.com</p>
                             <small>online</small>
@@ -307,36 +321,72 @@
                     <li>
                         <div class="profile-info">
                             <h3>Info</h3>
-                            <small>Total completed orders</small>
-                            <p>4</p>
-                            <small>Completion rate(%)</small>
-                            <p>80.00%</p>
-                            <small>Avg. payment time</small>
-                            <p>24m 45s</p>
-                            <small>Positive feedback(%)</small>
-                            <p>N/A</p>
-                            <small>More info ></small>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="profile-info">
-                        <li>
-                            <div class="profile-info-buttons">
-                                <button id="payment">Payment</button>
-                                <button id="price-alerts">Price Alerts</button>
-                                <button id="settings">Settings</button>
-                                <button id="reviews">Reviews</button>
-                                <button id="following-blocked-reported">Following/Blocked/Reported</button>
+                            <div class="profile-info-info">
+                                <div class="profile-info-info-col">
+                                    <small>Total completed orders</small>
+                                    <p>4</p>
+                                </div>
+                                <div class="profile-info-info-col">
+                                    <small>Completion rate(%)</small>
+                                    <p>80.00%</p>
+                                </div>
                             </div>
-                        </li>
+                            <div class="profile-info-info">
+                                <div class="profile-info-info-col">
+                                    <small>Avg. payment time</small>
+                                    <p>24m 45s</p>
+                                </div>
+                                <div class="profile-info-info-col">
+                                    <small>Positive feedback(%)</small>
+                                    <p>N/A</p>
+                                </div>
+                            </div>
+                            <div class="profile-info-more-btn">
+                                <small>More info ></small>
+                            </div>
                         </div>
                     </li>
                     <li>
                         <div class="profile-info">
                             <div class="profile-info-buttons">
-                                <button id="customer-support">Customer Support</button>
-                                <button id="become-super-merchant">Become a Super Merchant</button>
-                                <button id="p2p-guide">P2P Guide</button>
+                                <div class="profile-info-buttons-div">
+                                    <small class="" id="payment"><i class="fas fa-credit-card"></i> Payment</small>
+                                    <small>></small>
+                                </div>
+                                <div class="profile-info-buttons-div">
+                                    <small class="" id="price-alerts"><i class="fas fa-bell"></i> Price Alerts</small>
+                                    <small>></small>
+                                </div>
+                                <div class="profile-info-buttons-div">
+                                    <small class="" id="settings"><i class="fas fa-cog"></i> Settings</small>
+                                    <small>></small>
+                                </div>
+                                <div class="profile-info-buttons-div">
+                                    <small class="" id="reviews"><i class="fas fa-star"></i> Reviews</small>
+                                    <small>></small>
+                                </div>
+                                <div class="profile-info-buttons-div">
+                                    <small id="following-blocked-reported"><i class="fas fa-user-friends"></i> Following/Blocked/Reported</small>
+                                    <small>></small>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="profile-info">
+                            <div class="profile-info-buttons">
+                                <div class="profile-info-buttons-div">
+                                    <small class="" id="payment"><i class="fas fa-credit-card"></i> Customer support</small>
+                                    <small>></small>
+                                </div>
+                                <div class="profile-info-buttons-div">
+                                    <small class="" id="price-alerts"><i class="fas fa-bell"></i> Become a Super Merchant</small>
+                                    <small>></small>
+                                </div>
+                                <div class="profile-info-buttons-div">
+                                    <small class="" id="settings"><i class="fas fa-cog"></i> P2P Guide</small>
+                                    <small>></small>
+                                </div>
                             </div>
                         </div>
                     </li>
@@ -348,6 +398,7 @@
     <script src="p2p-tab-content-toggle.js" defer></script>
     <script src="dynamic-island.js" defer></script>
     <script src="orders-tab-content-toggle.js" defer></script>
+    <script src="ads-tab-content-toggle.js" defer></script>
 </body>
 </html>
 

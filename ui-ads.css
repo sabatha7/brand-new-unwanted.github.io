@@ -1,0 +1,168 @@
+.ads-nav-option input + label span {
+    display: none;
+}
+
+.ads-top-row {
+    width: 100%;
+    min-height: 95.1px;
+    height: auto;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    background: #fff;
+    display: flex;
+    border-color: transparent;
+    border-bottom: 0;
+    clear: both;
+}
+
+.ads-top-row .ads-nav-option {
+    float: right;
+    width: 25%;
+}
+
+.ads-top-row .ads-status {
+    float: left;
+}
+
+.ads-status-info-inactive {
+    display: none;
+}
+
+.ads-top-row-div-wrap {
+    margin-left: 23.1px;
+    margin-right: 23.1px;
+    border-radius: 43.1px;
+    background-color: rgb(231, 231, 231);
+    width:100%;
+    margin-top: 20px;
+    min-height: 20px;
+    padding: 0;
+    height: auto;
+    border-bottom: 0px !important;
+}
+.ads-status-info {
+    width: 55% !important;
+    max-width: 55% !important;
+    margin-left: 23.1px;
+    position: absolute;
+    margin-top: 6px;
+    padding-right: 1.3px;
+    height: auto !important;
+}
+
+.ads-status-info-small {
+    font-size: 11px;
+}
+
+.ads-nav-option {
+    display: block;
+    background: #000000;
+    color: #d3d3d3;
+    border-radius: 63px;
+    padding: 3px;
+    height: 25px !important;
+    text-align: center;
+    width: 40px !important;
+    margin-top: 11.1px;
+    margin-right: 13px;
+    right: 23.1px;
+    position: absolute;
+}
+
+.ads-nav-option-non-available {
+    background-color: rgb(240, 240, 240);
+}
+
+.ads-nav-option input[type="radio"] {
+    display: none;
+}
+
+.ads-nav-option label {
+    cursor: pointer;
+    width: 17px;
+    height: 17px;
+    display: inline-block;
+    text-align: center;
+    font-weight: bold;
+    -webkit-tap-highlight-color: transparent;
+    border-radius: 63px;
+    margin-top: 3.7px !important;
+    border: 0 !important;
+}
+
+.ads-nav-option input[type="radio"]:checked + label {
+    font-weight: normal;
+    color: #ffffff;
+    border-radius: 35px;
+    background-color: #fff; /* example background color for selected item */
+}
+
+.ads-rows-filter {
+    position: fixed;
+    top:113px;
+    width: 100%;
+    border: 0;
+}
+
+.ads-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.ads-list li {
+    margin-bottom: 20px;
+}
+
+.ads-info {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-bottom: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.ads-info h3 {
+    margin-top: 0;
+}
+
+.ads-selection-row {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    width: 100% !important;
+    max-width: 100%;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+    flex-shrink: inherit;
+    overflow: auto;
+    overflow-y: scroll;
+    scrollbar-width: thin; /* For Firefox */
+    left: 0;
+    right: 0;
+    border-top: 0;
+}
+
+.ads-selection-row::-webkit-scrollbar {
+    width: 8px; /* For WebKit Browsers */
+    display: block; /* Ensure the scrollbar is always visible */
+}
+
+.ads-row-filter {
+    position: fixed;
+    top: 113px;
+    border: 0;
+    left: 0;
+    width: 30%;
+    margin: 0;
+    padding: 0;
+}
+
+.ads-selection-options {
+    margin-left: 23.1px !important;
+}

@@ -1,3 +1,6 @@
+body {
+    min-height: 100%;
+}
 .wrap-page {
     display: flex;
     flex-direction: column;
@@ -40,12 +43,6 @@
     width: 100%;
 }
 
-.orders-top-row {
-    top: 33px;
-    position: fixed;
-    width: 100%;
-}
-
 .options-currency-selection {
     position: absolute;
     right: 0;
@@ -73,16 +70,6 @@
     margin-left: 0;
     background: #f3efef;
     color: #d3d3d3;
-    border-radius: 63px;
-    padding: 3px;
-}
-
-.orders-nav-option {
-    position: absolute;
-    left: 0;
-    margin-left: 13px;
-    background: #f3efef;
-    color: #9b9797;
     border-radius: 63px;
     padding: 3px;
 }
@@ -156,7 +143,7 @@
     margin-top: 0;
 }
 
-.buyer-info-delivery-method {
+.info-delivery-method {
     border-left: 4px solid #c9ff36;
     padding: 4px;
 }
@@ -198,6 +185,7 @@
 .selection-options select {
     float: left;
     padding-left: 23.1px !important;
+    padding-right: 5.1px;
 }
 
 .dynamic-island {
