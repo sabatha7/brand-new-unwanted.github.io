@@ -105,11 +105,13 @@
     border: 0;
 }
 
+/**
 .ads-list {
     list-style: none;
     padding: 0;
     margin: 0;
 }
+**/
 
 .ads-list li {
     margin-bottom: 20px;
@@ -137,7 +139,7 @@
     align-items: stretch;
     width: 100% !important;
     max-width: 100%;
-    padding-bottom: 10px;
+    padding-bottom: 5.7px;
     border-bottom: 1px solid #ccc;
     flex-shrink: inherit;
     overflow: auto;

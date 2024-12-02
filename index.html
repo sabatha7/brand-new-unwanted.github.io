@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="ui-ads.css">
     <link rel="stylesheet" href="ui-chats.css">
     <link rel="stylesheet" href="ui-profile.css">
+    <link rel="stylesheet" href="ui-p2p.css">
 </head>
 <body>
     <div class="row-dynamic-island">
@@ -39,10 +40,12 @@
                     </select>
                 </div>
             </div>
-            <div class="selection-row selection-row-filter">
-                <div class="selection-options">
+        </div>
+        <div class="tab-content">
+            <div class="p2p-selection-row p2p-row-filter">
+                <div class="p2p-selection-options">
                     <select name="store">
-                        <option value="" selected hidden>Outlet</option>
+                        <option value="" disabled>Outlet</option>
                         <option value="truworths">Truworths</option>
                         <option value="identity">Identity</option>
                         <option value="woolworths">Woolworths</option>
@@ -52,6 +55,12 @@
                         <option value="mr-price">Mr Price</option>
                         <option value="edgars">Edgars</option>
                         <option value="incredible-connection">Incredible Connection</option>
+                        <option value="" disabled selected>Currency</option>
+                        <option value="usdt">USDT - Tether</option>
+                        <option value="btc">BTC - Bitcoin</option>
+                        <option value="eth">ETH - Ethereum</option>
+                        <option value="usdc">USDC - USD Coin</option>
+                        <option value="solana">SOL - Solana</option>
                     </select>
                     <select name="amount">
                         <option value="" selected hidden>Amount</option>
@@ -63,8 +72,6 @@
                     </select>
                 </div>
             </div>
-        </div>
-        <div class="tab-content">
             <div class="tab-pane active" id="buy-offer-list-content">
                 <ul class="buyer-list">
                     <li>

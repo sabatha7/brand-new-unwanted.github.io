@@ -1,0 +1,35 @@
+.p2p-selection-row {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    overflow: auto;
+    overflow-y: scroll;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5.7px;
+}
+
+.p2p-selection-row::-webkit-scrollbar {
+    width: 8px; /* For WebKit Browsers */
+    display: block; /* Ensure the scrollbar is always visible */
+}
+
+.p2p-row-filter {
+    top: 93px;
+    display: flex;
+    flex-direction: row;
+    min-width: 100%;
+    white-space: nowrap; /* Add this line */
+    position: fixed;
+    overflow: auto;
+    overflow-y: scroll;
+}
+
+.p2p-row-filter::-webkit-scrollbar {
+    width: 8px; /* For WebKit Browsers */
+    display: block; /* Ensure the scrollbar is always visible */
+}
+
+.p2p-selection-options {
+    margin-left: 23.1px !important;
+}

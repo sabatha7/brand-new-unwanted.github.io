@@ -119,11 +119,13 @@ body {
     width: 100%;
 }
 
+/**
 .buyer-list {
     list-style: none;
     padding: 0;
     margin: 0;
 }
+**/
 
 .buyer-list li {
     margin-bottom: 20px;
@@ -153,29 +155,40 @@ body {
 }
 
 .selection-row {
+    margin: 0;
+    padding: 0;
     display: flex;
-    flex-direction: column;
-    align-items: stretch;
-    width: 100%;
+    align-items: center;
     max-width: 100%;
-    padding-bottom: 10px;
-    border-bottom: 1px solid #ccc;
-    flex-shrink: inherit;
-    overflow: auto;
-    overflow-y: scroll;
+    overflow-x: auto;
     scrollbar-width: thin; /* For Firefox */
+    border-bottom: 1px solid #ccc;
+    flex: 0 0 auto; /* prevent the flex items from shrinking */
 }
 
 .selection-row::-webkit-scrollbar {
-    width: 8px; /* For WebKit Browsers */
+    height: 8px; /* For WebKit Browsers */
     display: block; /* Ensure the scrollbar is always visible */
 }
 
 .selection-row-filter {
     position: fixed;
     top: 113px;
+    border: 0;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
 }
 
+.selection-options {
+    margin-left: 23.1px !important;
+}
+
+/**
 .selection-options {
     display: flex;
     justify-content: space-around;
@@ -187,6 +200,8 @@ body {
     padding-left: 23.1px !important;
     padding-right: 5.1px;
 }
+
+**/
 
 .dynamic-island {
     position: fixed;
