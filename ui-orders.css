@@ -68,3 +68,49 @@
 .buyer-info p {
     margin-bottom: 10px;
 }
+
+.order-info .order-header {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.order-header .order-title-container {
+    min-width: 50%;
+}
+
+.order-header .order-status-container {
+    width: 50%;
+    text-align: right;
+}
+
+
+.order-info .order-details {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.order-details .order-quantity {
+    min-width: 50%;
+}
+
+.order-details .order-price {
+    width: 50%;
+    text-align: right;
+}
+
+.order-chat-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.order-chat-container .order-chat-info {
+    width: 50%;
+}
+
+.order-chat-container .order-chat-button {
+    width: 50%;
+    text-align: right;
+}

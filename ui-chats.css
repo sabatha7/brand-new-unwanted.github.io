@@ -23,11 +23,37 @@
 
 .chat-info-chat-details {
     margin-left: 20px;
+    width: 100%;
 }
 
 .profile-picture-wrapper {
     min-height: 100% !important;
     align-items: center;
-    padding-top: 17px;
 }
 
+.chat-message-header {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.chat-message-header .chat-email-or-name {
+    width: 90%;
+}
+
+.chat-message-header .chat-timestamp {
+    width: 10%;
+    text-align: center;
+}
+
+.chats-top-row {
+    top: 33px;
+    position: fixed;
+    width: 100%;
+    height:35.1px;
+    display: flex;
+}
+
+.chats-nav-option {
+    margin-left: 23.1%;
+}

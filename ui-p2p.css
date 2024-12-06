@@ -33,3 +33,19 @@
 .p2p-selection-options {
     margin-left: 23.1px !important;
 }
+
+.buyer-info-details {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.buyer-info-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.buyer-info-inc-filters-and-amount {
+    width: 84%;
+}

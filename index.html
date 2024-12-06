@@ -78,9 +78,18 @@
                         <div class="buyer-info">
                             <h3>cryptosolitude</h3>
                             <small>0 transactions · 0% completion rate · 0% good rating</small>
-                            <small>TFG Limited</small>
-                            <p>Available <strong>R14000</strong></p>
-                            <p class="info-delivery-method">Collect In store</p>
+                            <div class="buyer-info-details">
+                                <div class="buyer-info-inc-filters-and-amount">
+                                    <small>TFG Limited</small>
+                                    <p>Available <strong>R14000</strong></p>
+                                    <p class="info-delivery-method">Collect In store</p>
+                                </div>
+                                <div class="buyer-info-buttons">
+                                    <div>
+                                        <button>Sell</button>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </li>
                     <li>
@@ -132,10 +141,31 @@
                 <ul class="order-list">
                     <li>
                         <div class="order-info">
-                            <div><h3>Sell Markham</h3><small>Fulfilled ></small></div>
+                            <div class="order-header">
+                                <div class="order-title-container">
+                                    <div class="order-title">Sell Markham</div>
+                                </div>
+                                <div class="order-status-container">
+                                    <div class="order-status">Fulfilled ></div>
+                                </div>
+                            </div>
                             <small>11/25/2024, 11h15</small>
-                            <div><small>Quantity 5 items</small><p>14000 ZAR</p></div>
-                            <div><p>bus***@yahoo.com</p><button>chat</button></div>
+                            <div class="order-details">
+                                <div class="order-quantity">
+                                    <small>Quantity 5 items</small>
+                                </div>
+                                <div class="order-price">
+                                    <small>14000 ZAR</small>
+                                </div>
+                            </div>
+                            <div class="order-chat-container">
+                                <div class="order-chat-info">
+                                    <small>bus***@yahoo.com</small>
+                                </div>
+                                <div class="order-chat-button">
+                                    <button>chat</button>
+                                </div>
+                            </div>
                         </div>
                     </li>
                 </ul>
@@ -203,14 +233,30 @@
                 <ul class="ads-list">
                     <li>
                         <div class="ads-info">
-                            <h3>Sell Markham / ZAR</h3>
+                            <div class="ads-info-header">
+                                <div class="ads-info-title">
+                                    <h3>Sell Markham / ZAR</h3>
+                                </div>
+                                <div class="ads-info-actions">
+                                    <select name="action">
+                                        <option value="" selected hidden><!--options--></option>
+                                        <option value="details">Details</option>
+                                        <option value="share">Share</option>
+                                        <option value="delete">Delete</option>
+                                    </select>
+                                </div>
+                            </div>
                             <p>R 4000.00</p>
                             <small>Available <strong>0.00 ZAR</strong> Out of stock</small>
                             <small>Order limit <strong>4000 ZAR</strong></small>
-                            <div>
-                                <p class="info-delivery-method">Collect In store</p>
-                                <button class="ads-info-active-indicator"><small class="ads-info-active-indicator-dot">·</small> Inactive</small></button>
-                                <button>Edit</button>
+                            <div class="ads-info-final">
+                                <div class="ads-info-final-div">
+                                    <p class="info-delivery-method">Collect In store</p>
+                                </div>
+                                <div class="ads-info-buttons-div">
+                                    <button class="ads-info-active-indicator">· Inactive</button>
+                                    <button>Edit</button>
+                                </div>
                             </div>
                         </div>
                     </li>
@@ -301,7 +347,14 @@
                                 <img class="profile-picture profile-picture-online" src="https://picsum.photos/50">
                             </div>
                             <div class="chat-info-chat-details">
-                                <p>luc***@gmail.com</p>
+                                <div class="chat-message-header">
+                                    <div class="chat-email-or-name">
+                                        <small>luc***@gmail.com</small>
+                                    </div>
+                                    <div class="chat-timestamp">
+                                        <small>11/25<!--/2024, 11h15--></small>
+                                    </div>
+                                </div>
                                 <small>hi what is my order limit</small>
                             </div>
                         </div>
@@ -357,24 +410,45 @@
                         <div class="profile-info">
                             <div class="profile-info-buttons">
                                 <div class="profile-info-buttons-div">
-                                    <small class="" id="payment"><i class="fas fa-credit-card"></i> Payment</small>
-                                    <small>></small>
+                                    <div class="profile-info-buttons-div">
+                                        <div class="profile-info-button">
+                                            <small class="" id="payment"><i class="fas fa-credit-card"></i> Payment</small>
+                                        </div>
+                                        <div class="profile-info-arrow">
+                                            <small>></small>
+                                        </div>
+                                    </div>
+                                <div class="profile-info-buttons-div">
+                                    <div class="profile-info-button">
+                                        <small class="" id="price-alerts"><i class="fas fa-bell"></i> Price Alerts</small>
+                                    </div>
+                                    <div class="profile-info-arrow">
+                                        <small>></small>
+                                    </div>
                                 </div>
                                 <div class="profile-info-buttons-div">
-                                    <small class="" id="price-alerts"><i class="fas fa-bell"></i> Price Alerts</small>
-                                    <small>></small>
+                                    <div class="profile-info-button">
+                                        <small class="" id="settings"><i class="fas fa-cog"></i> Settings</small>
+                                    </div>
+                                    <div class="profile-info-arrow">
+                                        <small>></small>
+                                    </div>
                                 </div>
                                 <div class="profile-info-buttons-div">
-                                    <small class="" id="settings"><i class="fas fa-cog"></i> Settings</small>
-                                    <small>></small>
+                                    <div class="profile-info-button">
+                                        <small class="" id="reviews"><i class="fas fa-star"></i> Reviews</small>
+                                    </div>
+                                    <div class="profile-info-arrow">
+                                        <small>></small>
+                                    </div>
                                 </div>
                                 <div class="profile-info-buttons-div">
-                                    <small class="" id="reviews"><i class="fas fa-star"></i> Reviews</small>
-                                    <small>></small>
-                                </div>
-                                <div class="profile-info-buttons-div">
-                                    <small id="following-blocked-reported"><i class="fas fa-user-friends"></i> Following/Blocked/Reported</small>
-                                    <small>></small>
+                                    <div class="profile-info-button">
+                                        <small id="following-blocked-reported"><i class="fas fa-user-friends"></i> Following/Blocked/Reported</small>
+                                    </div>
+                                    <div class="profile-info-arrow">
+                                        <small>></small>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -383,16 +457,30 @@
                         <div class="profile-info">
                             <div class="profile-info-buttons">
                                 <div class="profile-info-buttons-div">
-                                    <small class="" id="payment"><i class="fas fa-credit-card"></i> Customer support</small>
-                                    <small>></small>
+                                <div class="profile-info-buttons-div">
+                                    <div class="profile-info-button">
+                                        <small class="" id="payment"><i class="fas fa-credit-card"></i> Customer support</small>
+                                    </div>
+                                    <div class="profile-info-arrow">
+                                        <small>></small>
+                                    </div>
                                 </div>
                                 <div class="profile-info-buttons-div">
-                                    <small class="" id="price-alerts"><i class="fas fa-bell"></i> Become a Super Merchant</small>
-                                    <small>></small>
+                                    <div class="profile-info-button">
+                                        <small class="" id="price-alerts"><i class="fas fa-bell"></i> Become a Super Merchant</small>
+                                    </div>
+                                    <div class="profile-info-arrow">
+                                        <small>></small>
+                                    </div>
                                 </div>
                                 <div class="profile-info-buttons-div">
-                                    <small class="" id="settings"><i class="fas fa-cog"></i> P2P Guide</small>
-                                    <small>></small>
+                                    <div class="profile-info-button">
+                                        <small class="" id="settings"><i class="fas fa-cog"></i> P2P Guide</small>
+                                    </div>
+                                    <div class="profile-info-arrow">
+                                        <small>></small>
+                                    </div>
+                                </div>
                                 </div>
                             </div>
                         </div>

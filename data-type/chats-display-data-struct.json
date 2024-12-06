@@ -1,0 +1,25 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "Chat info",
+    "type": "object",
+    "properties": {
+        "profilePicture": {
+            "type": "string",
+            "format": "uri"
+        },
+        "profilePictureOnline": {
+            "type": "boolean"
+        },
+        "emailOrName": {
+            "type": "string"
+        },
+        "timestamp": {
+            "type": "string",
+            "format": "date-time"
+        },
+        "messagePreview": {
+            "type": "string"
+        }
+    },
+    "required": ["profilePicture", "profilePictureOnline", "emailOrName", "timestamp", "messagePreview"]
+}

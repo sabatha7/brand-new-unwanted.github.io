@@ -1,0 +1,32 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "Created ads info",
+    "type": "object",
+    "properties": {
+        "title": {
+            "type": "string"
+        },
+        "price": {
+            "type": "number"
+        },
+        "available": {
+            "type": "number"
+        },
+        "deliveryMethod": {
+            "type": "string",
+            "enum": ["collect", "freight"]
+        },
+        "outlet": {
+            "type": "string"
+        },
+        "status": {
+            "type": "string",
+            "enum": ["pending", "in_progress", "fulfilled", "dispute", "canceled"]
+        },
+        "date": {
+            "type": "string",
+            "format": "date-time"
+        }
+    },
+    "required": ["title", "price", "available", "deliveryMethod", "outlet", "status", "date"]
+}

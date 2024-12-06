@@ -1,0 +1,34 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "Order info",
+    "type": "object",
+    "properties": {
+        "title": {
+            "type": "string"
+        },
+        "status": {
+            "type": "string",
+            "enum": ["pending", "in_progress", "fulfilled", "dispute", "canceled"]
+        },
+        "date": {
+            "type": "string",
+            "format": "date-time"
+        },
+        "quantity": {
+            "type": "number"
+        },
+        "price": {
+            "type": "number"
+        },
+        "buyer": {
+            "type": "string"
+        },
+        "seller": {
+            "type": "string"
+        },
+        "chat": {
+            "type": "boolean"
+        }
+    },
+    "required": ["title", "status", "date", "quantity", "price", "buyer", "seller", "chat"]
+}

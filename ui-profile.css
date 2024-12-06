@@ -27,3 +27,27 @@
 .profile-info-buttons-div, .profile-info-buttons-btn {
     min-width: 100% !important;
 }
+
+.profile-info-buttons-div .profile-info-buttons-div {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 41.3px;
+}
+
+.profile-info-buttons-div .profile-info-button {
+    width: 97.1%;
+    height: inherit;
+    padding-top: 13.1px;
+}
+
+.profile-info-buttons-div .profile-info-arrow {
+    width: 2.9%;
+    text-align: right;
+    height: inherit;
+    padding-top: 13.1px;
+}
+
+.profile-info-buttons {
+    width: 100%;
+}

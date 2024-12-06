@@ -1,0 +1,56 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "Profile info",
+    "type": "object",
+    "properties": {
+        "profilePicture": {
+            "type": "string",
+            "format": "uri"
+        },
+        "emailOrName": {
+            "type": "string"
+        },
+        "timestamp": {
+            "type": "string",
+            "format": "date-time"
+        },
+        "messagePreview": {
+            "type": "string"
+        },
+        "profileInfo": {
+            "type": "object",
+            "properties": {
+                "info": {
+                    "type": "object",
+                    "properties": {
+                        "totalCompletedOrders": {
+                            "type": "number"
+                        },
+                        "completionRate": {
+                            "type": "number"
+                        },
+                        "avgPaymentTime": {
+                            "type": "string",
+                            "format": "duration"
+                        },
+                        "positiveFeedback": {
+                            "type": "number"
+                        }
+                    },
+                    "required": ["totalCompletedOrders", "completionRate", "avgPaymentTime", "positiveFeedback"]
+                },
+                "moreInfo": {
+                    "type": "object",
+                    "properties": {
+                        "moreInfoText": {
+                            "type": "string"
+                        }
+                    },
+                    "required": ["moreInfoText"]
+                }
+            },
+            "required": ["info", "moreInfo"]
+        }
+    },
+    "required": ["profilePicture", "emailOrName", "timestamp", "messagePreview", "profileInfo"]
+}

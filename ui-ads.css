@@ -168,3 +168,46 @@
 .ads-selection-options {
     margin-left: 23.1px !important;
 }
+
+.ads-info-final {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.ads-info-final-div {
+    width: 50%;
+}
+
+.ads-info-buttons-div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 50%;
+}
+
+.ads-info-buttons-div button {
+    height: 30px;
+    width: auto;
+    text-align: center;
+    align-items: center;
+    margin-left: auto;
+}
+
+.ads-info-header {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.ads-info-header .ads-info-title {
+    width: 89%;
+}
+
+.ads-info-header .ads-info-actions {
+    align-items: right;
+}
+
+.ads-info-actions select option:first-child {
+    text-align: right;
+}
