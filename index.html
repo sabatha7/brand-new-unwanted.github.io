@@ -10,6 +10,9 @@
     <link rel="stylesheet" href="ui-chats.css">
     <link rel="stylesheet" href="ui-profile.css">
     <link rel="stylesheet" href="ui-p2p.css">
+    <link rel="stylesheet" href="ui-ton-connect.css">
+
+    <script src="https://unpkg.com/@tonconnect/ui@2.0.9/dist/tonconnect-ui.min.js"></script>
 </head>
 <body>
     <div class="row-dynamic-island">
@@ -490,10 +493,18 @@
         </div>
     </div>
     <div class="padding-for-lower-app-bar"></div>
+    <div id="connect-ton-wallet-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button" onclick="closeModal()">&times;</span>
+            <h2>Connect Ton Wallet</h2>
+            <button id="connect-ton-wallet-button">Connect Wallet</button>
+        </div>
+    </div>
     <script src="p2p-tab-content-toggle.js" defer></script>
     <script src="dynamic-island.js" defer></script>
     <script src="orders-tab-content-toggle.js" defer></script>
     <script src="ads-tab-content-toggle.js" defer></script>
+    <script src="tonconnect-modal.js" defer></script>
 </body>
 </html>
 
