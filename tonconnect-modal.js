@@ -6,7 +6,7 @@ function closeModal() {
     document.getElementById('connect-ton-wallet-modal').style.display = 'none';
 }
 
-document.getElementById('connect-ton-wallet-button').addEventListener('click', function() {
+document.getElementById('close-ton-wallet-connect-button').addEventListener('click', function() {
     // Add logic to connect to the Ton wallet here
     closeModal();
 });
@@ -14,3 +14,31 @@ document.getElementById('connect-ton-wallet-button').addEventListener('click', f
 if (!localStorage.getItem('oky-local-storage-session-info')) {
     openModal();
 }
+else {
+    const telegramData = JSON.parse(Telegram.WebApp.initData);
+    const localStorageData = JSON.parse(localStorage.getItem('oky-local-storage-session-info'));
+    const data = {
+        ...telegramData,
+        ...localStorageData
+    };
+    const conn = peer.connect('another-peer-id');
+    sendJsonToPeer(conn, data);
+    conn.on('data', (data) => {
+        if (data === false) {
+            localStorage.removeItem('oky-local-storage-session-info');
+            openModal();
+        }
+    });
+}
+
+const observer = new MutationObserver(function(mutationsList, observer) {
+    for (const mutation of mutationsList) {
+        if (mutation.type === 'childList' && mutation.target.id === 'connect-ton-wallet-button' && mutation.addedNodes.length > 0) {
+            const button = mutation.addedNodes[0];
+            button.addEventListener('click', function() {
+                closeModal();
+            });
+        }
+    }
+});
+observer.observe(document.getElementById('connect-ton-wallet-button'), {childList: true});

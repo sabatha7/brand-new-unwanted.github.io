@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="ui-p2p.css">
     <link rel="stylesheet" href="ui-ton-connect.css">
 
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
     <script src="https://unpkg.com/@tonconnect/ui@2.0.9/dist/tonconnect-ui.min.js"></script>
 </head>
 <body>
@@ -98,10 +99,19 @@
                     <li>
                         <div class="buyer-info">
                             <h3>sab***@gmail.com</h3>
-                            <small>1 transactions · 100% completion rate · 100% good rating</small>
-                            <small>TFG Limited</small>
-                            <p>Available <strong>R4000</strong></p>
-                            <p class="info-delivery-method">Collect In store</p>
+                            <small>4 transactions · 80% completion rate · 100% good rating</small>
+                            <div class="buyer-info-details">
+                                <div class="buyer-info-inc-filters-and-amount">
+                                    <small>TFG Limited</small>
+                                    <p>Available <strong>R11000</strong></p>
+                                    <p class="info-delivery-method">Collect In store</p>
+                                </div>
+                                <div class="buyer-info-buttons">
+                                    <div>
+                                        <button>Sell</button>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </li>
                 </ul>
@@ -112,9 +122,18 @@
                         <div class="buyer-info">
                             <h3>cryptosolitude</h3>
                             <small>0 transactions · 0% completion rate · 0% good rating</small>
-                            <small>Markham</small>
-                            <p>Available <strong>R24000</strong></p>
-                            <p class="info-delivery-method">Collect In store</p>
+                            <div class="buyer-info-details">
+                                <div class="buyer-info-inc-filters-and-amount">
+                                    <small>TFG Limited</small>
+                                    <p>Available <strong>R94000</strong></p>
+                                    <p class="info-delivery-method">Collect In store</p>
+                                </div>
+                                <div class="buyer-info-buttons">
+                                    <div>
+                                        <button>Buy</button>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </li>
                 </ul>
@@ -495,9 +514,9 @@
     <div class="padding-for-lower-app-bar"></div>
     <div id="connect-ton-wallet-modal" class="modal">
         <div class="modal-content">
-            <span class="close-button" onclick="closeModal()">&times;</span>
+            <span id="close-ton-wallet-connect-button" class="close-button" onclick="closeModal()">&times;</span>
             <h2>Connect Ton Wallet</h2>
-            <button id="connect-ton-wallet-button">Connect Wallet</button>
+            <div id="connect-ton-wallet-button"></div>
         </div>
     </div>
     <script src="p2p-tab-content-toggle.js" defer></script>
@@ -505,6 +524,7 @@
     <script src="orders-tab-content-toggle.js" defer></script>
     <script src="ads-tab-content-toggle.js" defer></script>
     <script src="tonconnect-modal.js" defer></script>
+    <script src="tonconnect.js" defer></script>
 </body>
 </html>
 

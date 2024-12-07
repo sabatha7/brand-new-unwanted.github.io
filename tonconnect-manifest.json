@@ -3,21 +3,6 @@
     "version": "2.0.1",
     "description": "Ton Connect is a decentralized protocol for connecting users to apps",
     "manifest_version": 2,
-    "icons": {
-        "16": "icon16.png",
-        "48": "icon48.png",
-        "128": "icon128.png"
-    },
-    "background": {
-        "scripts": ["background.js"],
-        "persistent": false
-    },
-    "content_scripts": [
-        {
-            "matches": ["<all_urls>"],
-            "js": ["content.js"],
-            "run_at": "document_end"
-        }
-    ],
+    "iconUrl": "https://github.com/sabatha7/brand-new-unwanted.github.io/blob/main/oky.png",
     "permissions": ["activeTab", "https://ton.org/*", "https://toncenter.com/*"]
 }
