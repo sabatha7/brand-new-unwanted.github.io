@@ -1,8 +1,5 @@
 {
     "name": "Ton Connect",
-    "version": "2.0.1",
-    "description": "Ton Connect is a decentralized protocol for connecting users to apps",
-    "manifest_version": 2,
     "iconUrl": "https://github.com/sabatha7/brand-new-unwanted.github.io/blob/main/oky.png",
-    "permissions": ["activeTab", "https://ton.org/*", "https://toncenter.com/*"]
+    "url": "https://t.me/okyexchange_bot/oky"
 }
