@@ -168,7 +168,7 @@
                                     <div class="order-title">Sell Markham</div>
                                 </div>
                                 <div class="order-status-container">
-                                    <div class="order-status">Fulfilled ></div>
+                                    <div class="order-status">In progress ></div>
                                 </div>
                             </div>
                             <small>11/25/2024, 11h15</small>
@@ -205,10 +205,31 @@
                 <ul class="order-list">
                     <li>
                         <div class="order-info">
-                            <div><h3>Sell Markham</h3><small>Fulfilled ></small></div>
+                            <div class="order-header">
+                                <div class="order-title-container">
+                                    <div class="order-title">Sell Markham</div>
+                                </div>
+                                <div class="order-status-container">
+                                    <div class="order-status">Fulfilled ></div>
+                                </div>
+                            </div>
                             <small>11/25/2024, 11h15</small>
-                            <div><small>Quantity 5 items</small><p>14000 ZAR</p></div>
-                            <div><p>bus***@yahoo.com</p><button>chat</button></div>
+                            <div class="order-details">
+                                <div class="order-quantity">
+                                    <small>Quantity 5 items</small>
+                                </div>
+                                <div class="order-price">
+                                    <small>14000 ZAR</small>
+                                </div>
+                            </div>
+                            <div class="order-chat-container">
+                                <div class="order-chat-info">
+                                    <small>bus***@yahoo.com</small>
+                                </div>
+                                <div class="order-chat-button">
+                                    <button>chat</button>
+                                </div>
+                            </div>
                         </div>
                     </li>
                 </ul>
@@ -391,8 +412,11 @@
                 <ul>
                     <li>
                         <div class="profile-info">
-                            <div class="profile-picture-wrapper">
-                                <img class="profile-picture profile-picture-online" src="https://picsum.photos/50">
+                            <div class="profile-info-with-web3-auth">
+                                <div class="profile-picture-wrapper">
+                                    <img class="profile-picture profile-picture-online" src="https://picsum.photos/50">
+                                </div>
+                                <div id="connect-ton-wallet-button"></div>
                             </div>
                             <p>luc***@gmail.com</p>
                             <small>online</small>
@@ -523,8 +547,8 @@
     <script src="dynamic-island.js" defer></script>
     <script src="orders-tab-content-toggle.js" defer></script>
     <script src="ads-tab-content-toggle.js" defer></script>
-    <script src="tonconnect-modal.js" defer></script>
     <script src="tonconnect.js" defer></script>
+    <script src="tonconnect-modal.js" defer></script>
 </body>
 </html>
 

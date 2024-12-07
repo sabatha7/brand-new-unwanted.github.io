@@ -24,7 +24,7 @@ else {
     const conn = peer.connect('another-peer-id');
     sendJsonToPeer(conn, data);
     conn.on('data', (data) => {
-        if (data === false) {
+        if (data === false && !tonConnectUI.connected) {
             localStorage.removeItem('oky-local-storage-session-info');
             openModal();
         }
@@ -42,3 +42,12 @@ const observer = new MutationObserver(function(mutationsList, observer) {
     }
 });
 observer.observe(document.getElementById('connect-ton-wallet-button'), {childList: true});
+
+const unsubscribe = tonConnectUI.onStatusChange(
+    walletAndwalletInfo => {
+        // update state/reactive variables to show updates in the ui
+        if (tonConnectUI.connected) {
+            closeModal();
+        }
+    } 
+);
