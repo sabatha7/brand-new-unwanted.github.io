@@ -3,6 +3,11 @@ const tonConnectUI = new TON_CONNECT_UI.TonConnectUI({
     buttonRootId: 'connect-ton-wallet-button'
 });
 
+const tonConnectUIProfilePage = new TON_CONNECT_UI.TonConnectUI({
+    manifestUrl: 'https://sabatha7.github.io/brand-new-unwanted.github.io/tonconnect-manifest.json',
+    buttonRootId: 'profile-page-connect-ton-wallet-button'
+});
+
 window.addEventListener('ton-connect-ui-connection-completed', (event) => {
     console.log('connected');
 });
