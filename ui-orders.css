@@ -116,3 +116,8 @@
     width: 50%;
     text-align: right;
 }
+
+.order-chat-container .order-chat-button button {
+    background: transparent;
+    border-radius: 63px;
+}

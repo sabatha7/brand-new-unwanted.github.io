@@ -127,11 +127,11 @@ body {
 }
 **/
 
-.buyer-list li {
+.buyer-list li, .seller-list li {
     margin-bottom: 20px;
 }
 
-.buyer-info {
+.buyer-info, .seller-info {
     display: flex;
     flex-direction: column;
     align-items: left;
@@ -141,7 +141,7 @@ body {
     border-radius: 5px;
 }
 
-.buyer-info h3 {
+.buyer-info h3, .seller-info h3 {
     margin-top: 0;
 }
 
@@ -150,7 +150,7 @@ body {
     padding: 4px;
 }
 
-.buyer-info p {
+.buyer-info p, .seller-info p {
     margin-bottom: 10px;
 }
 

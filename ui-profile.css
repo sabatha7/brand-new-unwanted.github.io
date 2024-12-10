@@ -62,3 +62,7 @@
     width: 50%;
     padding-right: 3.1px;
 }
+
+.profile-info .profile-info-verification-badges {
+    color: green
+}

@@ -34,18 +34,40 @@
     margin-left: 23.1px !important;
 }
 
-.buyer-info-details {
+.buyer-info-details, .seller-info-details {
     display: flex;
     flex-direction: row;
     width: 100%;
 }
 
-.buyer-info-buttons {
+.buyer-info-buttons, .seller-info-buttons {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.buyer-info-inc-filters-and-amount {
+.buyer-info-inc-filters-and-amount, .seller-info-inc-filters-and-amount {
     width: 84%;
+}
+
+.seller-info-buttons button {
+    background-color: salmon;
+    color: #fff;
+    /**border: 0;**/
+    border-radius: 63px;
+    padding-left: 11px;
+    padding-right: 11px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+.buyer-info-buttons button {
+    background-color: #36ff68;
+    color: #fff;
+    /**border: 0;**/
+    border-radius: 63px;
+    padding-left: 11px;
+    padding-right: 11px;
+    padding-top: 3px;
+    padding-bottom: 3px;
 }

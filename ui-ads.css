@@ -192,6 +192,8 @@
     text-align: center;
     align-items: center;
     margin-left: auto;
+    background: transparent;
+    border-radius: 63px;
 }
 
 .ads-info-header {
