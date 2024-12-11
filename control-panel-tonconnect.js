@@ -28,27 +28,20 @@ const unsubscribe = tonConnectUI.onStatusChange(
     walletAndwalletInfo => {
         // update state/reactive variables to show updates in the ui
         if (tonConnectUI.connected) {
-
+            try {
+                const peerId = tonConnectUI.account.address.slice(-32);
+                console.log(peerId);
+                const peer = new Peer();
+                peer.on('open', function(id) {
+                    console.log('My peer ID is: ' + id);
+                });
+                peer.on('connection', function(conn) {
+                    establishedPeer = true;
+                    console.log('connected');
+                });
+            } catch (error) {
+                console.error('Error establishing peer connection:', error);
+            }
         }
     }
 );
-
-var establishedPeer = false;
-
-
-while (!establishedPeer) {
-    try {
-        const peerId = tonConnectUI.account.address.slice(-32);
-        console.log(peerId);
-        const peer = new Peer(peerId);
-        peer.on('open', function(id) {
-            console.log('My peer ID is: ' + id);
-        });
-        peer.on('connection', function(conn) {
-            establishedPeer = true;
-            console.log('connected');
-        });
-    } catch (error) {
-        console.error('Error establishing peer connection:', error);
-    }
-}
