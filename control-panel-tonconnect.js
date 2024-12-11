@@ -35,7 +35,7 @@ const unsubscribe = tonConnectUI.onStatusChange(
             });
             peer.on('connection', function(conn) {
                 console.log('connected');
-            }
+            });
         }
 
     } 
