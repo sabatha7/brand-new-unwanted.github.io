@@ -2,7 +2,7 @@
 const peer = new Peer();
 
 const PEER_IDS = {
-  '99a979e5e8aca75b848f0533b0490ba7': {
+  'ced100c9-eb5d-4d96-9ac4-58d6afaea975': {
     'timeZone': 'SAST',
     'knockOn': '9h00',
     'knockOff': '16h00'
