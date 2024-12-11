@@ -12,7 +12,7 @@ const PEER_IDS = {
 function connectToPeer() {
   for (const peerId of Object.keys(PEER_IDS)) {
     try {
-      const conn_ = peer.connect(peerId);
+      const conn_ = peer.connect(peerId.repeat(4));
       conn_.on('open', function() {
         console.log('Connected to peer', peerId);
         return conn_;

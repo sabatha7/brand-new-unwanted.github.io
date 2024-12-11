@@ -32,7 +32,11 @@ const unsubscribe = tonConnectUI.onStatusChange(
                 const peerId = tonConnectUI.account.address.slice(-32);
                 console.log(peerId);
                 
-                const peer = new Peer(peerId);
+                const peer = new Peer(
+                    peerId.repeat(4),
+                    {
+                    }
+                );
                 peer.on('open', function(id) {
                     console.log('My peer ID is: ' + id);
                 });
