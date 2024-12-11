@@ -32,7 +32,7 @@ const observer = new MutationObserver(function(mutationsList, observer) {
     for (const mutation of mutationsList) {
         if (mutation.type === 'childList' && mutation.target.id === 'connect-ton-wallet-button' && mutation.addedNodes.length > 0) {
             const button = document.getElementById('connect-ton-wallet-button').firstElementChild;
-            console.log(button);
+
             button.addEventListener('click', function() {
                 closeModal();
             });
@@ -40,6 +40,16 @@ const observer = new MutationObserver(function(mutationsList, observer) {
     }
 });
 observer.observe(document.getElementById('connect-ton-wallet-button'), {childList: true});
+
+try {
+    const button = document.getElementById('connect-ton-wallet-button').firstElementChild;
+
+    button.addEventListener('click', function() {
+        closeModal();
+    });
+} catch (error) {
+    console.error(error);
+}
 
 const unsubscribe = tonConnectUI.onStatusChange(
     walletAndwalletInfo => {
