@@ -2,7 +2,7 @@
 const peer = new Peer();
 
 const PEER_IDS = {
-  'ced100c9-eb5d-4d96-9ac4-58d6afaea975': {
+  '99a979e5e8aca75b848f0533b0490ba7': {
     'timeZone': 'SAST',
     'knockOn': '9h00',
     'knockOff': '16h00'
@@ -24,15 +24,11 @@ function connectToPeer() {
   }
 }
 
-const conn = connectToPeer();
-
-if(!conn) {
-  console.log('nothing connection');
-}
-
 // Set up event listeners for the peer
 peer.on('open', function(id) {
   console.log('My peer ID is: ' + id);
+
+  const conn = connectToPeer();
 });
 
 // Handle incoming connections

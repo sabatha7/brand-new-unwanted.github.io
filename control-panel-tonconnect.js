@@ -24,17 +24,15 @@ if (isTonConnectSdkError(event.reason)) {
 }
 });
 
-const peerIds = [
-    'ced100c9-eb5d-4d96-9ac4-58d6afaea975', '012fe631-370b-49f6-aab1-f46753b20dbe'
-];
-
 const unsubscribe = tonConnectUI.onStatusChange(
     walletAndwalletInfo => {
         // update state/reactive variables to show updates in the ui
         if (tonConnectUI.connected) {
             try {
-                //const peerId = tonConnectUI.account.address.slice(-32);
-                const peer = new Peer(peerIds[0]);
+                const peerId = tonConnectUI.account.address.slice(-32);
+                console.log(peerId);
+                
+                const peer = new Peer(peerId);
                 peer.on('open', function(id) {
                     console.log('My peer ID is: ' + id);
                 });
