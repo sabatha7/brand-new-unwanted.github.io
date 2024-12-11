@@ -31,7 +31,7 @@ else {
 const observer = new MutationObserver(function(mutationsList, observer) {
     for (const mutation of mutationsList) {
         if (mutation.type === 'childList' && mutation.target.id === 'connect-ton-wallet-button' && mutation.addedNodes.length > 0) {
-            const button = mutation.addedNodes[0];
+            const button = document.getElementById('connect-ton-wallet-button').firstElementChild;
             button.addEventListener('click', function() {
                 closeModal();
             });
