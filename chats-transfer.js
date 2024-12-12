@@ -15,13 +15,16 @@ function connectToPeer() {
       const conn_ = peer.connect(peerId.repeat(4));
       conn_.on('open', function() {
         console.log('Connected to peer', peerId);
-        return conn_;
+        const customerAddr = tonConnectUI.account.address;
+        sendToPeer(conn_, {type: '__Init__', from: tonConnectUI.account.address});
       });
+      //return conn_;
 
     } catch (err) {
       console.log('Error connecting to peer', peerId, err);
     }
   }
+  //return false;
 }
 
 // Set up event listeners for the peer
@@ -29,17 +32,7 @@ peer.on('open', function(id) {
   console.log('My peer ID is: ' + id);
 
   const conn = connectToPeer();
-});
-
-// Handle incoming connections
-peer.on('connection', function(conn) {
-  conn.on('data', function(data) {
-    console.log('Received', data);
-  });
-
-  conn.on('open', function() {
-    conn.send('Hello!');
-  });
+  //console.log(conn);
 });
 
 // Send a message to a peer
@@ -50,3 +43,17 @@ const sendToPeer = (conn, message) => {
     console.log('Connection is closed');
   }
 };
+
+
+// Handle incoming messages
+peer.on('connection', function(conn) {
+  conn.on('data', function(data) {
+    if(data.type === '__Init__') {
+      console.log('Peer', conn.peer, 'has initialized');
+      console.log(data);
+      //sendToPeer(conn, {type: '__Init__', from: tonConnectUI.account.address});
+    } else if(data.type === '__Message__') {
+      console.log('Peer', conn.peer, 'sent message', data.message);
+    }
+  });
+});
