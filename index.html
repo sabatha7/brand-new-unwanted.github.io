@@ -66,8 +66,8 @@
                         <option value="mr-price">Mr Price</option>
                         <option value="edgars">Edgars</option>
                         <option value="incredible-connection">Incredible Connection</option>
-                        <option value="" disabled selected>Currency</option>
-                        <option value="usdt">USDT - Tether</option>
+                        <option value="" disabled>Currency</option>
+                        <option value="usdt" selected>USDT - Tether</option>
                         <option value="btc">BTC - Bitcoin</option>
                         <option value="eth">ETH - Ethereum</option>
                         <option value="usdc">USDC - USD Coin</option>
@@ -77,9 +77,14 @@
                         <option value="" selected hidden>Amount</option>
                     </select>
                     <select name="delivery-method">
-                        <option value="" selected hidden>Delivery option</option>
-                        <option value="collect">Collect</option>
-                        <option value="doordash">Freight</option>
+                        <option value="" hidden>Payment method</option>
+                        <option value="" disabled>Payment method</option>
+                        <option value="collect">Bank transfer</option>
+                        <option value="doordash">Wise</option>
+                        <option value="doordash">Revolut</option>
+                        <option value="" disabled>Delivery option</option>
+                        <option value="collect" disabled>Collect</option>
+                        <option value="doordash" disabled>Freight</option>
                     </select>
                 </div>
             </div>
@@ -271,13 +276,13 @@
             <div class="tab-pane active" id="ads-existing-content">
                 <div class="ads-selection-row ads-rows-filter">
                     <div class="ads-selection-options">
-                        <select name="store">
+                        <select name="ads-ad-type-option">
                             <option value="" selected hidden>Type</option>
                             <option value="all">All</option>
                             <option value="fulfilled">Buy</option>
                             <option value="canceled">Sell</option>
                         </select>
-                        <select name="store">
+                        <select name="ads-ads-activity-status-option">
                             <option value="" selected hidden>Status</option>
                             <option value="all">All</option>
                             <option value="fulfilled">Active</option>
@@ -562,6 +567,17 @@
             <div id="connect-ton-wallet-button"></div>
         </div>
     </div>
+    <div id="amount-option-select-modal" class="modal-amount-option-select">
+        <div class="modal-content">
+            <span id="close-modal-amount-option-select-button" class="close-button" onclick="closeModalAmountOptionSelect()">&times;</span>
+            <input type="number" id="amount-option-select" name="amount-option-select" min="1" step="100" oninput="closeModalAmountOptionSelect()" required>
+            <div class="modal-amount-option-select-buttons">
+                <button type="button" id="modal-amount-option-select-reset-button">Reset</button>
+                <button type="submit" id="modal-amount-option-select-enter-button">Enter</button>
+            </div>
+            
+        </div>
+    </div>
     <script src="p2p-tab-content-toggle.js" defer></script>
     <script src="dynamic-island.js" defer></script>
     <script src="orders-tab-content-toggle.js" defer></script>
@@ -569,6 +585,7 @@
     <script src="tonconnect.js" defer></script>
     <script src="tonconnect-modal.js" defer></script>
     <script src="chats-transfer.js" defer></script>
+    <script src="filters-listener-feedback-persist.js" defer></script>
 </body>
 </html>
 

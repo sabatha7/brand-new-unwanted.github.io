@@ -19,14 +19,19 @@
         "outlet": {
             "type": "string"
         },
-        "status": {
+        "state": {
             "type": "string",
-            "enum": ["pending", "in_progress", "fulfilled", "dispute", "canceled"]
+            "enum": ["active", "inactive"]
+        },
+        "type": {
+            "type": "string",
+            "enum": ["buy", "sell"]
         },
         "date": {
             "type": "string",
             "format": "date-time"
         }
     },
-    "required": ["title", "price", "available", "deliveryMethod", "outlet", "status", "date"]
+    "required": ["title", "price", "available", "deliveryMethod", "outlet", "state", "status", "type", "date"]
 }
+

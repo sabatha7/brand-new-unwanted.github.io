@@ -14,9 +14,6 @@
             "type": "string",
             "format": "date-time"
         },
-        "messagePreview": {
-            "type": "string"
-        },
         "profileInfo": {
             "type": "object",
             "properties": {
@@ -38,18 +35,9 @@
                         }
                     },
                     "required": ["totalCompletedOrders", "completionRate", "avgPaymentTime", "positiveFeedback"]
-                },
-                "moreInfo": {
-                    "type": "object",
-                    "properties": {
-                        "moreInfoText": {
-                            "type": "string"
-                        }
-                    },
-                    "required": ["moreInfoText"]
                 }
             },
-            "required": ["info", "moreInfo"]
+            "required": ["info"]
         }
     },
     "required": ["profilePicture", "emailOrName", "timestamp", "messagePreview", "profileInfo"]
