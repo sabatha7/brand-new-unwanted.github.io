@@ -36,9 +36,9 @@
         <div class="nav-tabs">
             <div class="top-row">
                 <div class="p2p-nav-option">
-                    <input type="radio" id="buy-market-opt" name="tab" checked>
+                    <input type="radio" id="buy-market-opt" name="p2p-nav-option-tab" checked>
                     <label for="buy-market-opt">sell</label>
-                    <input type="radio" id="sell-market-opt" name="tab">
+                    <input type="radio" id="sell-market-opt" name="p2p-nav-option-tab">
                     <label for="sell-market-opt">buy</label>
                 </div>
                 <div class="options-currency-selection">
@@ -570,7 +570,7 @@
     <div id="amount-option-select-modal" class="modal-amount-option-select">
         <div class="modal-content">
             <span id="close-modal-amount-option-select-button" class="close-button" onclick="closeModalAmountOptionSelect()">&times;</span>
-            <input type="number" id="amount-option-select" name="amount-option-select" min="1" step="100" oninput="closeModalAmountOptionSelect()" required>
+            <input type="number" id="amount-option-select" name="amount-option-select" oninput="" required>
             <div class="modal-amount-option-select-buttons">
                 <button type="button" id="modal-amount-option-select-reset-button">Reset</button>
                 <button type="submit" id="modal-amount-option-select-enter-button">Enter</button>

@@ -24,3 +24,5 @@ if (isTonConnectSdkError(event.reason)) {
 }
 });
 
+// todo: we could attempt to edit the tonconnectui var itself when moving it from const to a regular var or a let then we could have a ton connect button on the profile section
+
