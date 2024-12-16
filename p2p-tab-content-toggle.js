@@ -13,6 +13,6 @@ function updateTabPanes() {
   }
 }
 
-document.querySelectorAll('input[name="tab"]').forEach(function (radio) {
+document.querySelectorAll('input[name="p2p-nav-option-tab"]').forEach(function (radio) {
   radio.addEventListener('change', updateTabPanes);
 });
