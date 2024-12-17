@@ -145,7 +145,22 @@ document.querySelectorAll('.p2p-nav-option input').forEach(function(input) {
 
 document.querySelector('select[name="currency"]').addEventListener('change', function() {
   const selectedCurrency = this.value;
+  if (document.getElementById('amount-option-select').value.trim() === '') {
+    document.getElementById('amount-option-select').placeholder = selectedCurrency;
+  }
   doUpdateP2pPage();
+});
+
+const selectedCurrencyDuringInit = document.querySelector('select[name="currency"]').value;
+if (document.getElementById('amount-option-select').value.trim() === '') {
+  document.getElementById('amount-option-select').placeholder = selectedCurrencyDuringInit;
+}
+
+document.getElementById('modal-amount-option-select-reset-button').addEventListener('click', function() {
+  const amountOptionSelect = document.getElementById('amount-option-select');
+  if (amountOptionSelect.value) {
+    amountOptionSelect.value = '';
+  }
 });
 
 document.getElementById('modal-amount-option-select-enter-button').addEventListener('click', function() {
