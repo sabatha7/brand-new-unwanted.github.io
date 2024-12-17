@@ -101,3 +101,23 @@
     flex-direction: row;
     width: 100%;
 }
+
+.modal-amount-option-select-buttons {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+#modal-amount-option-select-reset-button {
+    border: 1px solid #ccc;
+    background-color: #fff;
+    border-radius: 63px;
+}
+
+#modal-amount-option-select-enter-button {
+    border-radius: 63px;
+    border: 0;
+    color: #fff;
+    background-color: black;
+    margin-left: 5.7px;
+}

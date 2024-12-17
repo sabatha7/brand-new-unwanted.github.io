@@ -27,6 +27,23 @@ function connectToPeer() {
   //return false;
 }
 
+function connectToPeerWithArgs(reqArgs) {
+  for (const peerId of Object.keys(PEER_IDS)) {
+    try {
+      const conn_ = peer.connect(peerId.repeat(4));
+      conn_.on('open', function() {
+        console.log('Connected to peer', peerId);
+        sendToPeer(conn_, reqArgs);
+      });
+      //return conn_;
+
+    } catch (err) {
+      console.log('Error connecting to peer', peerId, err);
+    }
+  }
+  //return false;
+}
+
 // Set up event listeners for the peer
 peer.on('open', function(id) {
   console.log('My peer ID is: ' + id);
@@ -52,7 +69,16 @@ peer.on('connection', function(conn) {
       console.log('Peer', conn.peer, 'has initialized');
       console.log(data);
       //sendToPeer(conn, {type: '__Init__', from: tonConnectUI.account.address});
-    } else if(data.type === '__Message__') {
+    }
+
+    if(data.type == 'custom-configurations') {
+      if(data.requestType === 'p2p'){}
+      if(data.requestType === 'orders'){}
+      if(data.requetType === 'ads'){}
+      if(data.requestType === 'chats'){}
+    }
+    
+    if(data.type === '__Message__') {
       console.log('Peer', conn.peer, 'sent message', data.message);
     }
   });
