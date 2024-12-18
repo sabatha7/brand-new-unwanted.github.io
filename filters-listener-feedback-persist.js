@@ -171,7 +171,10 @@ document.getElementById('modal-amount-option-select-enter-button').addEventListe
     const firstOption = selectAmount.options[0];
 
     firstOption.value = amountOptionSelect.value;
-    firstOption.innerHTML = amountOptionSelect.value;
+    firstOption.innerHTML = amountOptionSelect.value + ' ' + document.querySelector('select[name="currency"]').value;
+  } else {
+    firstOption.value = '';	
+    firstOption.innerHTML = '';
   }
 });
 

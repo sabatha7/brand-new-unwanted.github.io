@@ -28,6 +28,77 @@
         </div>
     </div>
     <div class="wrap-page wrap-p2p-page">
+        <div id="p2p-buy-sell-modal" class="modal">
+            <div class="modal-content">
+                <div>
+                    <div id="buy-sell-at-market-nav-option">
+                        <input type="radio" id="" name="" checked>
+                        <label for="pending-orders-radio">amount</label>
+                        <input type="radio" id="" name="">
+                        <label for="completed-orders-radio">quantity</label>
+                    </div>
+
+                    <div class="input-group">
+                        <input type="number" id="" placeholder="0">
+                        <label for="">ZAR</label>
+                        <button id="">Max</button>
+                    </div>
+
+                    <small>order limit 5.00 - 150 zar</small>
+                    <small>you receive 0.000000 eth</small>
+                </div>
+                <div>
+                    <small>Fulfilement method</small>
+                    <select name="" id="">
+                        <option value="bank-transfer" selected>Bank transfer</option>
+                    </select>
+                    
+                </div>
+                <div>
+                    <small>Maker info</small>
+                    <small>payment window 15 mins</small>
+                    <small>maker yet***@gmail.com</small>
+                    <small>Status Online</small>
+                    <small>you receive 0.000000 eth</small>
+                </div>
+                <small>By proceeding, you have read and agree to our <a href="">OKY p2p exchanging legal disclaimer</a></small>
+
+            </div>
+            <div class="modal-content">
+                <small>Pending your payment</small>
+                <small>Pay within 14:08</small>
+                <div>
+                    <!-- chat wizzard-->
+                    <div class="chat-info">
+                        <div class="profile-picture-wrapper">
+                            <img class="profile-picture profile-picture-online" src="https://picsum.photos/50">
+                        </div>
+                        <div class="chat-info-chat-details">
+                            <div class="chat-message-header">
+                                <div class="chat-email-or-name">
+                                    <small>luc***@gmail.com</small>
+                                </div>
+                                <div class="chat-timestamp">
+                                    <button>chat</button>
+                                </div>
+                            </div>
+                            <small>Don't mark paid if non payment was made. we are online 24/7</small>
+                        </div>
+                    </div>
+                </div>
+                <small>Buy Eth</small>
+                <small>Order id</small>
+                <small>Unit price</small>
+                <small>Quantity</small>
+                <small>Order amount</small>
+                <small>Fulfilement method</small>
+                <div>
+                    <small>reminder</small>
+                    <small>Pay with your own bank account/wallet. If the name doesn't match your OKY account name, the seller will not be able to transfer the funds. You will have to bear any refund fees that may apply.</small>
+                </div>
+            </div>
+        </div>
+    
         <div id="p2p-buy-sell-modal" class="modal" hidden>
             <div class="modal-content">
                 <span id="close-ton-wallet-connect-button" class="close-button" onclick="closeModal()">&times;</span>
@@ -570,7 +641,7 @@
     <div id="amount-option-select-modal" class="modal-amount-option-select">
         <div class="modal-content">
             <span id="close-modal-amount-option-select-button" class="close-button" onclick="closeModalAmountOptionSelect()">&times;</span>
-            <input type="number" id="amount-option-select" name="amount-option-select" oninput="" required>
+            <input min="1" type="number" id="amount-option-select" name="amount-option-select" oninput="" required>
             <div class="modal-amount-option-select-buttons">
                 <button type="button" id="modal-amount-option-select-reset-button">Reset</button>
                 <button type="submit" id="modal-amount-option-select-enter-button">Enter</button>
