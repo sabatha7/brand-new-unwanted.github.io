@@ -103,6 +103,11 @@
     top:113px;
     width: 100%;
     border: 0;
+    background: #fff;
+}
+
+.ads-list {
+    margin-top: 190px;
 }
 
 /**
@@ -176,14 +181,14 @@
 }
 
 .ads-info-final-div {
-    width: 50%;
+    width: 40%;
 }
 
 .ads-info-buttons-div {
     display: flex;
     flex-direction: row;
     align-items: center;
-    width: 50%;
+    width: 60%;
 }
 
 .ads-info-buttons-div button {

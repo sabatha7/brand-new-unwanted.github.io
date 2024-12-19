@@ -1,25 +1,32 @@
 .orders-top-row {
-    top: 33px;
-    position: fixed;
     width: 100%;
     border-bottom: 1px solid #ccc;
     height:35.1px;
+    background: #ffff;
+    position: fixed;
+    top: 0;
+    padding-top: 9px;
+    z-index: 1;
 }
 
 .orders-nav-option {
-    position: absolute;
     left: 0;
     margin-left: 23.1px;
     background: #f3efef;
     color: #9b9797;
     border-radius: 63px;
     padding: 3px;
+    width: 190px;
 }
 
-.orders-rows-filter {
+.tab-pane .orders-rows-filter {
+    left: 0;
     position: fixed;
-    top:83px;
-    width: 100%;
+    top: 45.3px;
+    width: 100vw;
+    background: #fff;
+    z-index: 1;
+    padding-top: 7.3px;
 }
 
 .order-type-of {
@@ -34,6 +41,9 @@
     float: left;
 }
 
+.order-list {
+    margin-top: 90px;
+}
 /**
 .order-list {
     list-style: none;
