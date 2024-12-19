@@ -43,29 +43,6 @@ body {
     height: auto;
 }
 
-.options-currency-selection {
-    position: absolute;
-    right: 0;
-    margin-right: 23.1px;
-    border-radius: 63px;
-    padding: 3px;
-    border: 1px solid #ccc;
-    background: #fff;
-}
-
-.options-currency-selection select {
-    padding: 11px;
-    cursor: pointer;
-    width: 97px;
-    display: inline-block;
-    text-align: center;
-    font-weight: bold;
-    padding: 11px;
-    background: transparent;
-}
-
-
-
 .nav-tabs input[type="radio"] {
     display: none;
 }
