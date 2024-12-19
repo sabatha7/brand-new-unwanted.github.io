@@ -213,3 +213,7 @@
 .ads-info-actions select option:first-child {
     text-align: right;
 }
+
+.ads-top-row, .ads-top-row-div-wrap, .ads-rows-filter {
+    background: #fff;
+}

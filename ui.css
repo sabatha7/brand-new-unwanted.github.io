@@ -5,7 +5,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 2.1px;
+    /**padding: 2.1px;**/
 }
 
 .tab-content {
@@ -18,7 +18,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 10px;
+    /**padding: 10px;**/
     background-color: #fff;
     width: 100%;
     z-index: 1;
@@ -39,9 +39,8 @@ body {
 
 .top-row {
     top: 33px;
-    position: fixed;
     width: 100%;
-    background-color: #fff;
+    height: auto;
 }
 
 .options-currency-selection {
@@ -65,15 +64,7 @@ body {
     background: transparent;
 }
 
-.p2p-nav-option {
-    position: absolute;
-    left: 23.1px;
-    margin-left: 0;
-    background: #f3efef;
-    color: #d3d3d3;
-    border-radius: 63px;
-    padding: 3px;
-}
+
 
 .nav-tabs input[type="radio"] {
     display: none;
@@ -116,7 +107,7 @@ body {
 }
 
 .tab-content {
-    margin-top: 50px; /* add some space between the nav tabs and the tab content */
+    /*margin-top: 9px;*/ /* add some space between the nav tabs and the tab content */
     width: 100%;
 }
 

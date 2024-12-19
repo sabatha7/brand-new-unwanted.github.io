@@ -1,38 +1,4 @@
-.p2p-selection-row {
-    width: 100%;
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: row;
-    overflow: auto;
-    overflow-y: scroll;
-    border-bottom: 1px solid #ccc;
-    padding-bottom: 5.7px;
-}
 
-.p2p-selection-row::-webkit-scrollbar {
-    width: 8px; /* For WebKit Browsers */
-    display: block; /* Ensure the scrollbar is always visible */
-}
-
-.p2p-row-filter {
-    top: 93px;
-    display: flex;
-    flex-direction: row;
-    min-width: 100%;
-    white-space: nowrap; /* Add this line */
-    position: fixed;
-    overflow: auto;
-    overflow-y: scroll;
-}
-
-.p2p-row-filter::-webkit-scrollbar {
-    width: 8px; /* For WebKit Browsers */
-    display: block; /* Ensure the scrollbar is always visible */
-}
-
-.p2p-selection-options {
-    margin-left: 23.1px !important;
-}
 
 .buyer-info-details, .seller-info-details {
     display: flex;
@@ -81,7 +47,7 @@
     width: 100%;
     height: 100vh;
     overflow: auto;
-    background: #fff
+    background: transparent;
 }
 
 .modal-amount-option-select .modal-content {
@@ -135,13 +101,50 @@
     background-color: rgba(0, 0, 0, 0.4);
 }
 
-nav-tabs .top-row {
-    background: #fff;
+.top-row {
     background-color: #fff;
     width: 100%;
-    height: auto;
+    min-height: auto;
+    position: absolute;
+    min-height: 54px;
+}
+
+.p2p-selection-row::-webkit-scrollbar {
+    width: 8px; /* For WebKit Browsers */
+    display: block; /* Ensure the scrollbar is always visible */
 }
 
 .p2p-row-filter {
+    top: 0;
+    padding-top: 7.3px;
+    display: flex;
+    flex-direction: row;
+    min-width: 100%;
+    width: 100%;
+    white-space: nowrap; /* Add this line */
+    overflow: auto;
+    overflow-y: scroll;
+    margin: 0;
+    border-bottom: 1px solid #ccc;
+    position: sticky;
     background: #fff;
+}
+
+.p2p-row-filter::-webkit-scrollbar {
+    width: 8px; /* For WebKit Browsers */
+    display: block; /* Ensure the scrollbar is always visible */
+}
+
+.p2p-selection-options {
+    margin-left: 23.1px !important;
+}
+
+.p2p-nav-option {
+    position: absolute;
+    left: 23.1px;
+    margin-left: 0;
+    background: #f3efef;
+    color: #d3d3d3;
+    border-radius: 63px;
+    padding: 3px;
 }
