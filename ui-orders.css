@@ -121,3 +121,11 @@
     background: transparent;
     border-radius: 63px;
 }
+
+.orders-top-row {
+    background: #fff;
+}
+
+.orders-rows-filter {
+    background: #fff;
+}
