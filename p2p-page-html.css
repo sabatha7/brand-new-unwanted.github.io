@@ -116,6 +116,8 @@ body {
 
 .p2p-page-html-top-row .options-currency-selection {
     width: 50%;
+    display: flex;
+    justify-content: right;
 }
 
 .p2p-page-html-top-row .options-currency-selection select {
@@ -127,13 +129,13 @@ body {
     font-weight: bold;
     padding: 11px;
     background: transparent;
-    margin-right: 23.1px;
     border-radius: 63px;
     border: 1px solid #ccc;
     height: 90px;
     width: 280px;
     margin-top: 43px;
     font-size: 19pt;
+    margin-right: 21.3px;
 }
 
 .p2p-page-html-further-filters {
