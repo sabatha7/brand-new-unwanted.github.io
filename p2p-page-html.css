@@ -4,7 +4,7 @@ body {
     position: absolute;
     padding: 0;
     margin: 0;
-    font-size: 29pt;
+    font-size: 9pt;
     
 }
 
@@ -46,7 +46,7 @@ body {
     height: 240px;
     color: #fff;
     text-align: center;
-    font-size: 39pt;
+    font-size: 9pt;
     padding-top: 120px;
     padding-left: 23.1px;
 }
@@ -63,7 +63,7 @@ body {
 
 .p2p-page-html-top-row {
     width: 100%;
-    height: 160px;
+    height: 110px;
     background: #fff;
     display: flex;
     flex-direction: row;
@@ -79,8 +79,9 @@ body {
     background: #f3efef;
     color: #d3d3d3;
     border-radius: 63px;
-    height: 120px;
-    width: 280px;
+    height: 60px;
+    width: 140px;
+    max-width: 44%;
     margin-top: 23.7px;
     border: 0;
 }
@@ -96,14 +97,16 @@ body {
 .p2p-page-html-top-row label {
     padding: 11px;
     cursor: pointer;
-    width: 87px;
+    width: 27px;
+    max-width: 100%;
     display: inline-block;
     text-align: center;
     font-weight: bold;
     -webkit-tap-highlight-color: transparent;
     border-radius: 63px;
     margin-left: 13px;
-    margin-top: 23px;
+    margin-top: 13px;
+    font-size: 11px;
 }
 
 .p2p-page-html-top-row input[type="radio"]:checked + label {
@@ -125,6 +128,7 @@ body {
     padding: 11px;
     cursor: pointer;
     width: 97px;
+    max-width: 100%;
     text-align: center;
     font-weight: bold;
     padding: 11px;
@@ -132,8 +136,8 @@ body {
     border-radius: 63px;
     border: 1px solid #ccc;
     height: 90px;
-    width: 280px;
-    margin-top: 43px;
+    width: 140px;
+    margin-top: 13px;
     font-size: 19pt;
     margin-right: 21.3px;
 }
@@ -157,7 +161,7 @@ body {
 
 .p2p-page-html-further-filters .p2p-selection-options select {
     height: 40px;
-    font-size: 19pt;
+    font-size: 9pt;
     margin-right: 14px;
     margin-top: 19px;
 }
@@ -195,9 +199,10 @@ body {
     padding-right: 11px;
     padding-top: 3px;
     padding-bottom: 3px;
+    /*
     height: 90px;
     width: 170px;
-    font-size: 29pt !important;
+    font-size: 29pt !important;*/
 }
 
 .buyer-info-buttons button {
@@ -209,9 +214,10 @@ body {
     padding-right: 11px;
     padding-top: 3px;
     padding-bottom: 3px;
+    /*
     height: 90px;
     width: 170px;
-    font-size: 29pt !important;
+    font-size: 29pt !important;*/
 }
 
 .buyer-list li, .seller-list li {
@@ -235,7 +241,7 @@ body {
 .info-delivery-method {
     border-left: 4px solid #c9ff36;
     padding: 4px;
-    padding-left: 13.1px;
+    padding-left: 6.9px;
 }
 
 .buyer-info p, .seller-info p {
