@@ -1,0 +1,242 @@
+body {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    font-size: 29pt;
+    
+}
+
+.eight-vh-html-slider {
+    background: #000;
+}
+
+.p2p-page-html-body-like {
+    background: #fff;
+    height: auto;
+    padding-bottom: 20px;
+}
+
+.p2p-page-html-body-like .inactive-hidden {
+    display: none;
+}
+
+.p2p-page-html-slider-div {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    height: auto;
+    background: #000;
+}
+
+.p2p-page-html-slider-div .slider {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 240px;
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+}
+
+.p2p-page-html-slider-div .slider .text {
+    position: relative;
+    width: 80%;
+    height: 240px;
+    color: #fff;
+    text-align: center;
+    font-size: 39pt;
+    padding-top: 120px;
+    padding-left: 23.1px;
+}
+
+.p2p-page-html-slider-div .slide {
+    width: 100%;
+    transition: transform 0.5s ease-in-out;
+    display: none; /* Hide all slides by default */
+}
+
+.p2p-page-html-slider-div .slide.active {
+    display: block; /* Show only the active slide */
+}
+
+.p2p-page-html-top-row {
+    width: 100%;
+    height: 160px;
+    background: #fff;
+    display: flex;
+    flex-direction: row;
+    border-radius: 13px 13px 0 0;
+    z-index: 1;
+    border: 0;
+}
+
+.p2p-page-html-top-row .p2p-nav-option {
+    position: absolute;
+    left: 23.1px;
+    margin-left: 0;
+    background: #f3efef;
+    color: #d3d3d3;
+    border-radius: 63px;
+    height: 120px;
+    width: 280px;
+    margin-top: 23.7px;
+    border: 0;
+}
+
+.p2p-page-html-top-row .for-p2p-nav-option {
+    width: 50%;
+}
+
+.p2p-page-html-top-row input[type="radio"] {
+    display: none;
+}
+
+.p2p-page-html-top-row label {
+    padding: 11px;
+    cursor: pointer;
+    width: 87px;
+    display: inline-block;
+    text-align: center;
+    font-weight: bold;
+    -webkit-tap-highlight-color: transparent;
+    border-radius: 63px;
+    margin-left: 13px;
+    margin-top: 23px;
+}
+
+.p2p-page-html-top-row input[type="radio"]:checked + label {
+    font-weight: normal;
+    color: #000;
+    border-radius: 35px;
+    border: 1px solid #ccc;
+    background-color: #fff; /* example background color for selected item */
+}
+
+.p2p-page-html-top-row .options-currency-selection {
+    width: 50%;
+}
+
+.p2p-page-html-top-row .options-currency-selection select {
+    position: absolute;
+    padding: 11px;
+    cursor: pointer;
+    width: 97px;
+    text-align: center;
+    font-weight: bold;
+    padding: 11px;
+    background: transparent;
+    margin-right: 23.1px;
+    border-radius: 63px;
+    border: 1px solid #ccc;
+    height: 90px;
+    width: 280px;
+    margin-top: 43px;
+    font-size: 19pt;
+}
+
+.p2p-page-html-further-filters {
+    width: 100%;
+    height: 80px;
+    background: #fff;
+    position: sticky;
+    top: 0;
+    border-bottom: 1px solid #ccc;
+    margin-top: 0;
+    border-top: 0;
+}
+
+.p2p-page-html-further-filters .p2p-selection-options {
+    display: flex;
+    flex-direction: row;
+    margin-left: 23.1px;
+}
+
+.p2p-page-html-further-filters .p2p-selection-options select {
+    height: 40px;
+    font-size: 19pt;
+    margin-right: 14px;
+    margin-top: 19px;
+}
+
+.buyer-list, .seller-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    margin-top: 41.3px;
+}
+
+.buyer-info-details, .seller-info-details {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.buyer-info-buttons, .seller-info-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.buyer-info-inc-filters-and-amount, .seller-info-inc-filters-and-amount {
+    width: 84%;
+}
+
+.seller-info-buttons button {
+    background-color: salmon;
+    color: #fff;
+    /**border: 0;**/
+    border-radius: 63px;
+    padding-left: 11px;
+    padding-right: 11px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    height: 90px;
+    width: 170px;
+    font-size: 29pt !important;
+}
+
+.buyer-info-buttons button {
+    background-color: green;
+    color: #fff;
+    /**border: 0;**/
+    border-radius: 63px;
+    padding-left: 11px;
+    padding-right: 11px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    height: 90px;
+    width: 170px;
+    font-size: 29pt !important;
+}
+
+.buyer-list li, .seller-list li {
+    margin-bottom: 20px;
+}
+
+.buyer-info, .seller-info {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    margin-left: 23.1px;
+    padding-right: 20px;
+    border-bottom: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.buyer-info h3, .seller-info h3 {
+    margin-top: 0;
+}
+
+.info-delivery-method {
+    border-left: 4px solid #c9ff36;
+    padding: 4px;
+    padding-left: 13.1px;
+}
+
+.buyer-info p, .seller-info p {
+    margin-bottom: 10px;
+}
+

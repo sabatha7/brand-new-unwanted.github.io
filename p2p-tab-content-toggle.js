@@ -5,11 +5,11 @@ function updateTabPanes() {
   const sellOfferListContent = document.getElementById('sell-offer-list-content');
 
   if (buyOfferListRadio.checked) {
-    buyOfferListContent.classList.add('active');
-    sellOfferListContent.classList.remove('active');
+    buyOfferListContent.classList.remove('inactive-hidden');
+    sellOfferListContent.classList.add('inactive-hidden');
   } else if (sellOfferListRadio.checked) {
-    buyOfferListContent.classList.remove('active');
-    sellOfferListContent.classList.add('active');
+    buyOfferListContent.classList.add('inactive-hidden');
+    sellOfferListContent.classList.remove('inactive-hidden');
   }
 }
 

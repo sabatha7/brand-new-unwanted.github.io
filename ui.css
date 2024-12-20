@@ -27,7 +27,7 @@ body {
     width: 100%; /* make the tab pane full-width */
 }
 
-.tab-pane.active {
+.tab-pane .active {
     display: block;
 }
 

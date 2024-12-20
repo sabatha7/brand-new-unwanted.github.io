@@ -1,22 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="ui.css">
-    <link rel="stylesheet" href="ui-orders.css">
-    <link rel="stylesheet" href="ui-ads.css">
-    <link rel="stylesheet" href="ui-chats.css">
-    <link rel="stylesheet" href="ui-profile.css">
-    <link rel="stylesheet" href="ui-p2p.css">
-    <link rel="stylesheet" href="ui-ton-connect.css">
-    
-    <script src="https://telegram.org/js/telegram-web-app.js"></script>
-    <script src="https://unpkg.com/@tonconnect/ui@2.0.9/dist/tonconnect-ui.min.js"></script>
-    <script src="https://unpkg.com/peerjs@1.5.4/dist/peerjs.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <meta charset="utf-8">
+    <title>OKY p2p</title>
+    <link rel="stylesheet" href="p2p-page-html.css">
+    <link rel="stylesheet" href="dynamic-island.css">
 </head>
+
 <body>
     <div class="row-dynamic-island">
         <div class="dynamic-island">
@@ -27,675 +18,184 @@
             <button id="profile">Profile</button>
         </div>
     </div>
-    <div class="wrap-page wrap-p2p-page">
-        <div id="p2p-buy-sell-modal" class="modal">
-            <div class="modal-content">
-                <div>
-                    <div id="buy-sell-at-market-nav-option">
-                        <input type="radio" id="" name="" checked>
-                        <label for="pending-orders-radio">amount</label>
-                        <input type="radio" id="" name="">
-                        <label for="completed-orders-radio">quantity</label>
-                    </div>
-
-                    <div class="input-group">
-                        <input type="number" id="" placeholder="0">
-                        <label for="">ZAR</label>
-                        <button id="">Max</button>
-                    </div>
-
-                    <small>order limit 5.00 - 150 zar</small>
-                    <small>you receive 0.000000 eth</small>
-                </div>
-                <div>
-                    <small>Fulfilement method</small>
-                    <select name="" id="">
-                        <option value="bank-transfer" selected>Bank transfer</option>
-                    </select>
-                    
-                </div>
-                <div>
-                    <small>Maker info</small>
-                    <small>payment window 15 mins</small>
-                    <small>maker yet***@gmail.com</small>
-                    <small>Status Online</small>
-                    <small>you receive 0.000000 eth</small>
-                </div>
-                <small>By proceeding, you have read and agree to our <a href="">OKY p2p exchanging legal disclaimer</a></small>
-
+    <div class="p2p-page-html-slider-div">
+        <div class="slider">
+            <div class="slide active">
+                <div class="text">Buy and Sell Bitcoin</div>
+                <div></div>
             </div>
-            <div class="modal-content">
-                <small>Pending your payment</small>
-                <small>Pay within 14:08</small>
-                <div>
-                    <!-- chat wizzard-->
-                    <div class="chat-info">
-                        <div class="profile-picture-wrapper">
-                            <img class="profile-picture profile-picture-online" src="https://picsum.photos/50">
-                        </div>
-                        <div class="chat-info-chat-details">
-                            <div class="chat-message-header">
-                                <div class="chat-email-or-name">
-                                    <small>luc***@gmail.com</small>
-                                </div>
-                                <div class="chat-timestamp">
-                                    <button>chat</button>
-                                </div>
-                            </div>
-                            <small>Don't mark paid if non payment was made. we are online 24/7</small>
-                        </div>
-                    </div>
-                </div>
-                <small>Buy Eth</small>
-                <small>Order id</small>
-                <small>Unit price</small>
-                <small>Quantity</small>
-                <small>Order amount</small>
-                <small>Fulfilement method</small>
-                <div>
-                    <small>reminder</small>
-                    <small>Pay with your own bank account/wallet. If the name doesn't match your OKY account name, the seller will not be able to transfer the funds. You will have to bear any refund fees that may apply.</small>
-                </div>
+            <div class="slide">
+                <div class="text">Fast and secure</div>
+                <div></div>
+            </div>
+            <div class="slide">
+                <div class="text">Low fees</div>
+                <div></div>
+            </div>
+            <div class="slide">
+                <div class="text">Great customer support</div>
+                <div></div>
             </div>
         </div>
-        <div class="slider-container">
-            <div class="slider">
-                <div class="slide">
-                    <img src="https://picsum.photos/500" alt="ad1">
-                    <div class="text">Buy and Sell Bitcoin</div>
-                </div>
-            </div>
-        </div>
-        <br/>
-        <div class="p2p-nav-tabs">
-            <div class="p2p-top-row">
+    </div>
+    <div class="eight-vh-html-slider">
+        <div class="p2p-page-html-top-row">
+            <div class="for-p2p-nav-option">
                 <div class="p2p-nav-option">
                     <input type="radio" id="buy-market-opt" name="p2p-nav-option-tab" checked>
                     <label for="buy-market-opt">sell</label>
                     <input type="radio" id="sell-market-opt" name="p2p-nav-option-tab">
                     <label for="sell-market-opt">buy</label>
                 </div>
-                <div class="options-currency-selection">
-                    <select name="currency">
-                        <option value="zar">ZAR - South African Rand</option>
-                        <option value="vnd">VND - Vietnamese Dong</option>
-                        <option value="gbp">GBP - Pounds Sterling</option>
-                        <option value="aoa">AOA - Angolan Kwanza</option>
-                        <option value="xof">XOF - West African CFA Franc</option>
-                    </select>
-                </div>
             </div>
-        </div>
-        <div class="tab-content">
-            <div class="p2p-selection-row p2p-row-filter">
-                <div class="p2p-selection-options">
-                    <select name="store">
-                        <option value="" disabled>Outlet</option>
-                        <option value="truworths">Truworths</option>
-                        <option value="identity">Identity</option>
-                        <option value="woolworths">Woolworths</option>
-                        <option value="makro">Makro</option>
-                        <option value="game">Game</option>
-                        <option value="tfg-limited">TFG Limited</option>
-                        <option value="mr-price">Mr Price</option>
-                        <option value="edgars">Edgars</option>
-                        <option value="incredible-connection">Incredible Connection</option>
-                        <option value="" disabled>Currency</option>
-                        <option value="usdt" selected>USDT - Tether</option>
-                        <option value="btc">BTC - Bitcoin</option>
-                        <option value="eth">ETH - Ethereum</option>
-                        <option value="usdc">USDC - USD Coin</option>
-                        <option value="solana">SOL - Solana</option>
-                    </select>
-                    <select name="amount">
-                        <option value="" selected hidden>Amount</option>
-                    </select>
-                    <select name="delivery-method">
-                        <option value="" hidden>Payment method</option>
-                        <option value="" disabled>Payment method</option>
-                        <option value="collect">Bank transfer</option>
-                        <option value="doordash">Wise</option>
-                        <option value="doordash">Revolut</option>
-                        <option value="" disabled>Delivery option</option>
-                        <option value="collect" disabled>Collect</option>
-                        <option value="doordash" disabled>Freight</option>
-                    </select>
-                </div>
-            </div>
-            <div class="tab-pane active" id="buy-offer-list-content">
-                <ul class="seller-list">
-                    <li>
-                        <div class="seller-info">
-                            <h3>cryptosolitude</h3>
-                            <small>0 transactions · 0% completion rate · 0% good rating</small>
-                            <div class="seller-info-details">
-                                <div class="seller-info-inc-filters-and-amount">
-                                    <small>TFG Limited</small>
-                                    <p>Available <strong>R14000</strong></p>
-                                    <p class="info-delivery-method">Collect In store</p>
-                                </div>
-                                <div class="seller-info-buttons">
-                                    <div>
-                                        <button>Sell</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="seller-info">
-                            <h3>sab***@gmail.com</h3>
-                            <small>4 transactions · 80% completion rate · 100% good rating</small>
-                            <div class="seller-info-details">
-                                <div class="seller-info-inc-filters-and-amount">
-                                    <small>TFG Limited</small>
-                                    <p>Available <strong>R11000</strong></p>
-                                    <p class="info-delivery-method">Collect In store</p>
-                                </div>
-                                <div class="seller-info-buttons">
-                                    <div>
-                                        <button>Sell</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="seller-info">
-                            <h3>sab***@gmail.com</h3>
-                            <small>4 transactions · 80% completion rate · 100% good rating</small>
-                            <div class="seller-info-details">
-                                <div class="seller-info-inc-filters-and-amount">
-                                    <small>TFG Limited</small>
-                                    <p>Available <strong>R1000</strong></p>
-                                    <p class="info-delivery-method">Collect In store</p>
-                                </div>
-                                <div class="seller-info-buttons">
-                                    <div>
-                                        <button>Sell</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="seller-info">
-                            <h3>sab***@gmail.com</h3>
-                            <small>4 transactions · 80% completion rate · 100% good rating</small>
-                            <div class="seller-info-details">
-                                <div class="seller-info-inc-filters-and-amount">
-                                    <small>TFG Limited</small>
-                                    <p>Available <strong>R410000</strong></p>
-                                    <p class="info-delivery-method">Collect In store</p>
-                                </div>
-                                <div class="seller-info-buttons">
-                                    <div>
-                                        <button>Sell</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-            <div class="tab-pane" id="sell-offer-list-content">
-                <ul class="buyer-list">
-                    <li>
-                        <div class="buyer-info">
-                            <h3>cryptosolitude</h3>
-                            <small>0 transactions · 0% completion rate · 0% good rating</small>
-                            <div class="buyer-info-details">
-                                <div class="buyer-info-inc-filters-and-amount">
-                                    <small>TFG Limited</small>
-                                    <p>Available <strong>R94000</strong></p>
-                                    <p class="info-delivery-method">Collect In store</p>
-                                </div>
-                                <div class="buyer-info-buttons">
-                                    <div>
-                                        <button>Buy</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
+            <div class="options-currency-selection">
+                <select name="currency">
+                    <option value="zar">ZAR - South African Rand</option>
+                    <option value="vnd">VND - Vietnamese Dong</option>
+                    <option value="gbp">GBP - Pounds Sterling</option>
+                    <option value="aoa">AOA - Angolan Kwanza</option>
+                    <option value="xof">XOF - West African CFA Franc</option>
+                </select>
             </div>
         </div>
     </div>
-    <div class="wrap-page wrap-orders-page">
-        <div id="order-expand-pending-completed-order-modal" class="modal" hidden>
-            <div class="modal-content">
-                <span id="close-ton-wallet-connect-button" class="close-button" onclick="closeModal()">&times;</span>
+    <div class="p2p-page-html-body-like">
+        <div class="p2p-page-html-further-filters">
+            <div class="p2p-selection-options">
+                <select name="store">
+                    <option value="" disabled>Outlet</option>
+                    <option value="truworths">Truworths</option>
+                    <option value="identity">Identity</option>
+                    <option value="woolworths">Woolworths</option>
+                    <option value="makro">Makro</option>
+                    <option value="game">Game</option>
+                    <option value="tfg-limited">TFG Limited</option>
+                    <option value="mr-price">Mr Price</option>
+                    <option value="edgars">Edgars</option>
+                    <option value="incredible-connection">Incredible Connection</option>
+                    <option value="" disabled>Currency</option>
+                    <option value="usdt" selected>USDT - Tether</option>
+                    <option value="btc">BTC - Bitcoin</option>
+                    <option value="eth">ETH - Ethereum</option>
+                    <option value="usdc">USDC - USD Coin</option>
+                    <option value="solana">SOL - Solana</option>
+                </select>
+                <select name="amount">
+                    <option value="" selected hidden>Amount</option>
+                </select>
+                <select name="delivery-method">
+                    <option value="" hidden>Payment method</option>
+                    <option value="" disabled>Payment method</option>
+                    <option value="collect">Bank transfer</option>
+                    <option value="doordash">Wise</option>
+                    <option value="doordash">Revolut</option>
+                    <option value="" disabled>Delivery option</option>
+                    <option value="collect" disabled>Collect</option>
+                    <option value="doordash" disabled>Freight</option>
+                </select>
             </div>
         </div>
-        <div class="orders-top-row">
-            <div class="orders-nav-option">
-                <input type="radio" id="pending-orders-radio" name="orders-tab" checked>
-                <label for="pending-orders-radio">Pending</label>
-                <input type="radio" id="completed-orders-radio" name="orders-tab">
-                <label for="completed-orders-radio">Completed</label>
-            </div>
-        </div>
-        <div class="tab-content">
-            <div class="tab-pane active" id="pending-orders-content">
-                <div class="orders-rows-filter">
-                    <div class="selection-options order-type-of">
-                        <select class="order-type-of-select" name="order-type-of-select">
-                            <option value="all">All</option>
-                            <option value="fulfilled">In progress</option>
-                            <option value="canceled">In dispute</option>
-                        </select>
-                    </div>
-                </div>
-                <ul class="order-list order-list-pending">
-                    <li>
-                        <div class="order-info">
-                            <div class="order-header">
-                                <div class="order-title-container">
-                                    <div class="order-title">Sell Markham</div>
-                                </div>
-                                <div class="order-status-container">
-                                    <div class="order-status">In progress ></div>
-                                </div>
+        <div class="tab-pane" id="buy-offer-list-content">
+            <ul class="seller-list">
+                <li>
+                    <div class="seller-info">
+                        <h3>cryptosolitude</h3>
+                        <small>0 transactions · 0% completion rate · 0% good rating</small>
+                        <div class="seller-info-details">
+                            <div class="seller-info-inc-filters-and-amount">
+                                <small>TFG Limited</small>
+                                <p>Available <strong>R14000</strong></p>
+                                <p class="info-delivery-method">Collect In store</p>
                             </div>
-                            <small>11/25/2024, 11h15</small>
-                            <div class="order-details">
-                                <div class="order-quantity">
-                                    <small>Quantity 5 items</small>
-                                </div>
-                                <div class="order-price">
-                                    <small>14000 ZAR</small>
-                                </div>
-                            </div>
-                            <div class="order-chat-container">
-                                <div class="order-chat-info">
-                                    <small>bus***@yahoo.com</small>
-                                </div>
-                                <div class="order-chat-button">
-                                    <button>chat</button>
+                            <div class="seller-info-buttons">
+                                <div>
+                                    <button>Sell</button>
                                 </div>
                             </div>
                         </div>
-                    </li>
-                </ul>
-            </div>
-            <div class="tab-pane" id="completed-orders-content">
-                <div class="orders-rows-filter">
-                    <div class="selection-options order-type-of">
-                        <select class="order-type-of-select" name="order-type-of-select">
-                            <option value="all">All</option>
-                            <option value="fulfilled">Fulfilled</option>
-                            <option value="canceled">Canceled</option>
-                        </select>
                     </div>
-                </div>
-                <ul class="order-list order-list-completed">
-                    <li>
-                        <div class="order-info">
-                            <div class="order-header">
-                                <div class="order-title-container">
-                                    <div class="order-title">Sell Markham</div>
-                                </div>
-                                <div class="order-status-container">
-                                    <div class="order-status">Fulfilled ></div>
-                                </div>
+                </li>
+                <li>
+                    <div class="seller-info">
+                        <h3>sab***@gmail.com</h3>
+                        <small>4 transactions · 80% completion rate · 100% good rating</small>
+                        <div class="seller-info-details">
+                            <div class="seller-info-inc-filters-and-amount">
+                                <small>TFG Limited</small>
+                                <p>Available <strong>R11000</strong></p>
+                                <p class="info-delivery-method">Collect In store</p>
                             </div>
-                            <small>11/25/2024, 11h15</small>
-                            <div class="order-details">
-                                <div class="order-quantity">
-                                    <small>Quantity 5 items</small>
-                                </div>
-                                <div class="order-price">
-                                    <small>14000 ZAR</small>
-                                </div>
-                            </div>
-                            <div class="order-chat-container">
-                                <div class="order-chat-info">
-                                    <small>bus***@yahoo.com</small>
-                                </div>
-                                <div class="order-chat-button">
-                                    <button>chat</button>
+                            <div class="seller-info-buttons">
+                                <div>
+                                    <button>Sell</button>
                                 </div>
                             </div>
                         </div>
-                    </li>
-                </ul>
-            </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="seller-info">
+                        <h3>sab***@gmail.com</h3>
+                        <small>4 transactions · 80% completion rate · 100% good rating</small>
+                        <div class="seller-info-details">
+                            <div class="seller-info-inc-filters-and-amount">
+                                <small>TFG Limited</small>
+                                <p>Available <strong>R1000</strong></p>
+                                <p class="info-delivery-method">Collect In store</p>
+                            </div>
+                            <div class="seller-info-buttons">
+                                <div>
+                                    <button>Sell</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="seller-info">
+                        <h3>sab***@gmail.com</h3>
+                        <small>4 transactions · 80% completion rate · 100% good rating</small>
+                        <div class="seller-info-details">
+                            <div class="seller-info-inc-filters-and-amount">
+                                <small>TFG Limited</small>
+                                <p>Available <strong>R410000</strong></p>
+                                <p class="info-delivery-method">Collect In store</p>
+                            </div>
+                            <div class="seller-info-buttons">
+                                <div>
+                                    <button>Sell</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="tab-pane inactive-hidden" id="sell-offer-list-content">
+            <ul class="buyer-list">
+                <li>
+                    <div class="buyer-info">
+                        <h3>cryptosolitude</h3>
+                        <small>0 transactions · 0% completion rate · 0% good rating</small>
+                        <div class="buyer-info-details">
+                            <div class="buyer-info-inc-filters-and-amount">
+                                <small>TFG Limited</small>
+                                <p>Available <strong>R94000</strong></p>
+                                <p class="info-delivery-method">Collect In store</p>
+                            </div>
+                            <div class="buyer-info-buttons">
+                                <div>
+                                    <button>Buy</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
         </div>
     </div>
-    <div class="wrap-page wrap-ads-page">
-        <div class="tab-content">
-            <div class="ads-top-row">
-                <div class="ads-top-row-div-wrap">
-                    <div class="ads-status-info ads-status-info-at-work">
-                        <small>Online</small><br/>
-                        <small class="ads-status-info-small">Available to accept orders for all your active ads.</small>
-                    </div>
-                    <div class="ads-status-info ads-status-info-non-available ads-status-info-inactive">
-                        <small>Offline</small><br/>
-                        <small class="ads-status-info-small">Unavailable to accept orders.</small>
-                    </div>
-                    <div class="ads-nav-option">
-                        <input type="radio" id="ads-status-offline" name="ads-status" />
-                        <label for="ads-status-offline"><!--Offline--></label>
-                        <input type="radio" id="ads-status-online" name="ads-status" checked />
-                        <label for="ads-status-online"><!--Online--></label>
-                    </div>
-                </div>
-            </div>
-            <div class="tab-pane active" id="ads-existing-content">
-                <div class="ads-selection-row ads-rows-filter">
-                    <div class="ads-selection-options">
-                        <select name="ads-ad-type-option">
-                            <option value="" selected hidden>Type</option>
-                            <option value="all">All</option>
-                            <option value="fulfilled">Buy</option>
-                            <option value="canceled">Sell</option>
-                        </select>
-                        <select name="ads-ads-activity-status-option">
-                            <option value="" selected hidden>Status</option>
-                            <option value="all">All</option>
-                            <option value="fulfilled">Active</option>
-                            <option value="canceled">Inactive</option>
-                        </select>
-                    </div>
-                </div>
-                <ul class="ads-list">
-                    <li>
-                        <div class="ads-info">
-                            <div class="ads-info-header">
-                                <div class="ads-info-title">
-                                    <h3>Sell Markham / ZAR</h3>
-                                </div>
-                                <div class="ads-info-actions">
-                                    <select name="action">
-                                        <option value="" selected hidden><!--options--></option>
-                                        <option value="details">Details</option>
-                                        <option value="share">Share</option>
-                                        <option value="delete">Delete</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <p>R 4000.00</p>
-                            <small>Available <strong>0.00 ZAR</strong> Out of stock</small>
-                            <small>Order limit <strong>4000 ZAR</strong></small>
-                            <div class="ads-info-final">
-                                <div class="ads-info-final-div">
-                                    <p class="info-delivery-method">Collect In store</p>
-                                </div>
-                                <div class="ads-info-buttons-div">
-                                    <button class="ads-info-active-indicator">· Inactive</button>
-                                    <button>Edit</button>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-            <button>Create</button>
-            <div class="tab-pane" id="create-ads-content">
-                <form id="create-advert-form">
-                    <div class="form-step">
-                        <div>
-                            <label for="currency">Currency</label>
-                            <select id="currency" name="currency">
-                                <option value="zar">ZAR - South African Rand</option>
-                                <option value="vnd">VND - Vietnamese Dong</option>
-                                <option value="gbp">GBP - Pounds Sterling</option>
-                                <option value="aoa">AOA - Angolan Kwanza</option>
-                                <option value="xof">XOF - West African CFA Franc</option>
-                            </select>
-                        </div>
-                        <div>
-                            <label for="store">Store</label>
-                            <select id="store" name="store">
-                                <option value="" selected hidden>Outlet</option>
-                                <option value="truworths">Truworths</option>
-                                <option value="identity">Identity</option>
-                                <option value="woolworths">Woolworths</option>
-                                <option value="makro">Makro</option>
-                                <option value="game">Game</option>
-                                <option value="tfg-limited">TFG Limited</option>
-                                <option value="mr-price">Mr Price</option>
-                                <option value="edgars">Edgars</option>
-                                <option value="incredible-connection">Incredible Connection</option>
-                            </select>
-                        </div>
-                        <div>
-                            <label for="amount">Amount</label>
-                            <input type="number" id="amount" name="amount" min="0" step="100" required>
-                        </div>
-                        <div>
-                            <label for="marketplace-type">Marketplace type</label>
-                            <select id="marketplace-type" name="marketplace-type">
-                                <option value="public">Public</option>
-                                <option value="private">Private</option>
-                            </select>
-                        </div>
-                        <button type="button" id="continue-button">Continue</button>
-                    </div>
-                    <div class="form-step">
-                        <div>
-                            <label for="transaction-settings">Transaction settings</label>
-                            <select id="transaction-settings" name="transaction-settings">
-                                <option value="escrow">Escrow</option>
-                                <option value="release">Release</option>
-                            </select>
-                        </div>
-                        <div>
-                            <label for="terms-of-trade">Terms of trade</label>
-                            <textarea id="terms-of-trade" name="terms-of-trade"></textarea>
-                        </div>
-                        <div>
-                            <label for="chat-auto-reply">Chat auto reply</label>
-                            <textarea id="chat-auto-reply" name="chat-auto-reply"></textarea>
-                        </div>
-                        <div>
-                            <button type="button" id="preview-button">Previous step</button>
-                            <button type="submit" id="publish-button">Publish</button>
-                        </div>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
-    <div class="wrap-page wrap-chat-page">
-        <div id="chat-expand-modal" class="modal" hidden>
-            <div class="modal-content">
-                <span id="close-ton-wallet-connect-button" class="close-button" onclick="closeModal()">&times;</span>
-            </div>
-        </div>
-        <div class="tab-content">
-            <div class="chats-top-row">
-                <div class="chats-nav-option">
-                    <i class="fa fa-search"></i>
-                    <form action="" class="search-bar">
-                        <input type="text" id="search-bar" name="search-bar" placeholder="Search...">
-                    </form>
-                </div>
-            </div>
-            <div class="tab-pane" id="chat-content">
-                <ul class="chat-content-list">
-                    <li>
-                        <div class="chat-info">
-                            <div class="profile-picture-wrapper">
-                                <img class="profile-picture profile-picture-online" src="https://picsum.photos/50">
-                            </div>
-                            <div class="chat-info-chat-details">
-                                <div class="chat-message-header">
-                                    <div class="chat-email-or-name">
-                                        <small>luc***@gmail.com</small>
-                                    </div>
-                                    <div class="chat-timestamp">
-                                        <small>11/25<!--/2024, 11h15--></small>
-                                    </div>
-                                </div>
-                                <small>hi what is my order limit</small>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    <div class="wrap-page wrap-profile-page">
-        <div class="tab-content">
-            <div class="tab-pane" id="profile-content">
-                <ul class="profile-content-list">
-                    <li>
-                        <div class="profile-info">
-                            <div class="profile-info-with-web3-auth">
-                                <div class="profile-picture-wrapper">
-                                    <img class="profile-picture profile-picture-online" src="https://picsum.photos/50">
-                                </div>
-                                <!--here-->
-                                <div id="legacy-connect-ton-wallet-button"></div>
-                            </div>
-                            <p>luc***@gmail.com</p>
-                            <small>online</small>
-                            <p>South Africa | Joined on: 09/20/2024</p>
-                            <p class="profile-info-verification-badges">ID verified Mobile Email</p>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="profile-info">
-                            <h3>Info</h3>
-                            <div class="profile-info-info">
-                                <div class="profile-info-info-col">
-                                    <small>Total completed orders</small>
-                                    <p>4</p>
-                                </div>
-                                <div class="profile-info-info-col">
-                                    <small>Completion rate(%)</small>
-                                    <p>80.00%</p>
-                                </div>
-                            </div>
-                            <div class="profile-info-info">
-                                <div class="profile-info-info-col">
-                                    <small>Avg. payment time</small>
-                                    <p>24m 45s</p>
-                                </div>
-                                <div class="profile-info-info-col">
-                                    <small>Positive feedback(%)</small>
-                                    <p>N/A</p>
-                                </div>
-                            </div>
-                            <div class="profile-info-more-btn">
-                                <small>More info ></small>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="profile-info">
-                            <div class="profile-info-buttons">
-                                <div class="profile-info-buttons-div">
-                                    <div class="profile-info-buttons-div">
-                                        <div class="profile-info-button">
-                                            <small class="" id="payment"><i class="fas fa-credit-card"></i> Payment</small>
-                                        </div>
-                                        <div class="profile-info-arrow">
-                                            <small>></small>
-                                        </div>
-                                    </div>
-                                <div class="profile-info-buttons-div">
-                                    <div class="profile-info-button">
-                                        <small class="" id="price-alerts"><i class="fas fa-bell"></i> Price Alerts</small>
-                                    </div>
-                                    <div class="profile-info-arrow">
-                                        <small>></small>
-                                    </div>
-                                </div>
-                                <div class="profile-info-buttons-div">
-                                    <div class="profile-info-button">
-                                        <small class="" id="settings"><i class="fas fa-cog"></i> Settings</small>
-                                    </div>
-                                    <div class="profile-info-arrow">
-                                        <small>></small>
-                                    </div>
-                                </div>
-                                <div class="profile-info-buttons-div">
-                                    <div class="profile-info-button">
-                                        <small class="" id="reviews"><i class="fas fa-star"></i> Reviews</small>
-                                    </div>
-                                    <div class="profile-info-arrow">
-                                        <small>></small>
-                                    </div>
-                                </div>
-                                <div class="profile-info-buttons-div">
-                                    <div class="profile-info-button">
-                                        <small id="following-blocked-reported"><i class="fas fa-user-friends"></i> Following/Blocked/Reported</small>
-                                    </div>
-                                    <div class="profile-info-arrow">
-                                        <small>></small>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="profile-info">
-                            <div class="profile-info-buttons">
-                                <div class="profile-info-buttons-div">
-                                <div class="profile-info-buttons-div">
-                                    <div class="profile-info-button">
-                                        <small class="" id="payment"><i class="fas fa-credit-card"></i> Customer support</small>
-                                    </div>
-                                    <div class="profile-info-arrow">
-                                        <small>></small>
-                                    </div>
-                                </div>
-                                <div class="profile-info-buttons-div">
-                                    <div class="profile-info-button">
-                                        <small class="" id="price-alerts"><i class="fas fa-bell"></i> Become a Super Merchant</small>
-                                    </div>
-                                    <div class="profile-info-arrow">
-                                        <small>></small>
-                                    </div>
-                                </div>
-                                <div class="profile-info-buttons-div">
-                                    <div class="profile-info-button">
-                                        <small class="" id="settings"><i class="fas fa-cog"></i> P2P Guide</small>
-                                    </div>
-                                    <div class="profile-info-arrow">
-                                        <small>></small>
-                                    </div>
-                                </div>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    <div class="padding-for-lower-app-bar"></div>
-    <div id="connect-ton-wallet-modal" class="modal">
-        <div class="modal-content">
-            <span id="close-ton-wallet-connect-button" class="close-button" onclick="closeModal()">&times;</span>
-            <h2>Connect Ton Wallet</h2>
-            <!--here-->
-            <div id="connect-ton-wallet-button"></div>
-        </div>
-    </div>
-    <div id="amount-option-select-modal" class="modal-amount-option-select">
-        <div class="modal-content">
-            <span id="close-modal-amount-option-select-button" class="close-button" onclick="closeModalAmountOptionSelect()">&times;</span>
-            <input min="1" type="number" id="amount-option-select" name="amount-option-select" oninput="" required>
-            <div class="modal-amount-option-select-buttons">
-                <button type="button" id="modal-amount-option-select-reset-button">Reset</button>
-                <button type="submit" id="modal-amount-option-select-enter-button">Enter</button>
-            </div>
-            
-        </div>
-    </div>
+    <script src="p2p-page-html.js" defer></script>
     <script src="p2p-tab-content-toggle.js" defer></script>
-    <script src="dynamic-island.js" defer></script>
-    <script src="orders-tab-content-toggle.js" defer></script>
-    <script src="ads-tab-content-toggle.js" defer></script>
-    <script src="tonconnect.js" defer></script>
-    <script src="tonconnect-modal.js" defer></script>
-    <script src="chats-transfer.js" defer></script>
-    <script src="filters-listener-feedback-persist.js" defer></script>
 </body>
-</html>
 
+</html>

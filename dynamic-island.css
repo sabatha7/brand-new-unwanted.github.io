@@ -1,0 +1,33 @@
+.dynamic-island {
+    position: fixed;
+    bottom: 19px;
+    left: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: row;
+    background-color: #fff;
+    border-radius: 63px;
+    padding-top: 10px;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    overflow: auto;
+    height: 90px;
+}
+
+.dynamic-island button {
+    padding: 5px;
+    background-color: transparent;
+    border: none;
+    border-radius: 63px;
+    color: #9b9797;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 21pt !important;
+    width: 19%;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.dynamic-island button:hover {
+    background-color: transparent;
+    color: #000;
+}
