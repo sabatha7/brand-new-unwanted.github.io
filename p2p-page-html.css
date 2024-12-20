@@ -127,7 +127,7 @@ body {
     position: absolute;
     padding: 11px;
     cursor: pointer;
-    width: 97px;
+    width: 67px;
     max-width: 100%;
     text-align: center;
     font-weight: bold;
@@ -135,10 +135,10 @@ body {
     background: transparent;
     border-radius: 63px;
     border: 1px solid #ccc;
-    height: 90px;
+    height: 34px;
     width: 140px;
-    margin-top: 13px;
-    font-size: 19pt;
+    margin-top: 33px;
+    font-size: 9px;
     margin-right: 21.3px;
 }
 
