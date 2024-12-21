@@ -228,6 +228,11 @@
     border-radius: 5px;
 }
 
+.buyer-info svg, .seller-info svg {
+    width: 5vw;
+    height: 5vw;
+}
+
 .buyer-info h3, .seller-info h3 {
     margin-top: 0;
 }
