@@ -1,3 +1,13 @@
 .padding-for-lower-app-bar {
     padding-bottom: 180px;
 }
+
+body {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    font-size: 29px;
+    
+}

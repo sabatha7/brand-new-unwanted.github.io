@@ -6,6 +6,7 @@
     <title>OKY p2p</title>
     <link rel="stylesheet" href="p2p-page-html.css">
     <link rel="stylesheet" href="dynamic-island.css">
+    <link rel="stylesheet" href="p2p-page-html-modal-amount-select.css">
     <link rel="stylesheet" href="ux.css">
 </head>
 
@@ -17,6 +18,20 @@
             <button id="ads">Ads</button>
             <button id="chat">Chat</button>
             <button id="profile">Profile</button>
+        </div>
+    </div>
+    <div id="amount-option-select-modal" class="modal-amount-option-select">
+        <div class="modal-content">
+            <div class="amount-option-select-modal-close-button-div">
+                <span id="close-modal-amount-option-select-button" class="close-button" onclick="closeModalAmountOptionSelect()">&times;</span>
+            </div>
+            <div class="amount-option-select-modal-number-input-div">
+                <input min="1" type="number" id="amount-option-select" name="amount-option-select" oninput="" required>
+            </div>
+            <div class="modal-amount-option-select-buttons">
+                <button type="button" id="modal-amount-option-select-reset-button">Reset</button>
+                <button type="submit" id="modal-amount-option-select-enter-button">Enter</button>
+            </div>    
         </div>
     </div>
     <div class="p2p-page-html-slider-div">
@@ -198,6 +213,7 @@
     <div class="padding-for-lower-app-bar"></div>
     <script src="p2p-page-html.js" defer></script>
     <script src="p2p-tab-content-toggle.js" defer></script>
+    <script src="p2p-page-html-modal-amount-select.js" defer></script>
 </body>
 
 </html>

@@ -1,0 +1,82 @@
+.modal-amount-option-select {
+    display: none;
+    position: absolute;
+    z-index: 20000;
+    left: 0;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: auto;
+    background: transparent;
+    padding: 0;
+    margin: 0;
+}
+
+.modal-amount-option-select .modal-content {
+    background-color: #fefefe;
+    border-top: 1px solid #888;
+    width: 100%;
+    border-radius: 23px 23px 0 0;
+    height: auto;
+    position: fixed;
+    bottom: 0;
+    margin: 0;
+    height: 20vh;
+}
+
+.modal-amount-option-select-buttons {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+    font-size: 27.1px;
+    padding-left: 11%;
+    padding-top: 0.5vh;
+}
+
+#modal-amount-option-select-reset-button {
+    border: 1px solid #ccc;
+    background-color: #fff;
+    border-radius: 63px;
+    height: 3vh;
+    width: auto;
+}
+
+#modal-amount-option-select-enter-button {
+    border-radius: 63px;
+    border: 0;
+    color: #fff;
+    background-color: black;
+    margin-left: 5.7px;
+    height: 3vh;
+    width: auto;
+}
+
+#close-modal-amount-option-select-button {
+    margin-right: 4%;
+}
+
+.amount-option-select-modal-close-button-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 100%;
+    margin-top: 11px;
+    height: auto;
+}
+
+.amount-option-select-modal-number-input-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    width: 100%;
+    height: auto;
+}
+
+.amount-option-select-modal-number-input-div input {
+    width: 70%;
+    font-size: 30px;
+    height: 5vh;
+    margin-left: 11%;
+}
