@@ -26,7 +26,10 @@
                 <span id="close-modal-amount-option-select-button" class="close-button" onclick="closeModalAmountOptionSelect()">&times;</span>
             </div>
             <div class="amount-option-select-modal-number-input-div">
-                <input min="1" type="number" id="amount-option-select" name="amount-option-select" oninput="" required>
+                <form>
+                    <input min="1" type="number" id="amount-option-select" name="amount-option-select" oninput="" required>
+                    <button type="submit" id="submit-button" style="display: none;">Submit</button>
+                </form>
             </div>
             <div class="modal-amount-option-select-buttons">
                 <button type="button" id="modal-amount-option-select-reset-button">Reset</button>
