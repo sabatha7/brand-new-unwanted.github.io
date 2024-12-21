@@ -170,12 +170,14 @@
     display: flex;
     flex-direction: row;
     width: 100%;
+    height: auto;
 }
 
 .buyer-info-buttons, .seller-info-buttons {
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 16%;
 }
 
 .buyer-info-inc-filters-and-amount, .seller-info-inc-filters-and-amount {
@@ -192,9 +194,9 @@
     padding-top: 3px;
     padding-bottom: 3px;
     /*
-    height: 90px;
-    width: 170px;
-    font-size: 29pt !important;*/
+    height: 2vh;
+    width: 13vw;
+    font-size: 29px !important;*/
 }
 
 .buyer-info-buttons button {
@@ -207,9 +209,9 @@
     padding-top: 3px;
     padding-bottom: 3px;
     /*
-    height: 90px;
-    width: 170px;
-    font-size: 29pt !important;*/
+    height: 2vh;
+    width: 13vw;
+    font-size: 29px !important;*/
 }
 
 .buyer-list li, .seller-list li {

@@ -40,7 +40,6 @@
     background-color: #fff;
     border-radius: 63px;
     height: 3vh;
-    width: auto;
     width: 13vw;
 }
 
@@ -51,7 +50,7 @@
     background-color: black;
     margin-left: 5.7px;
     height: 3vh;
-    width: 9vw;
+    width: 13vw;
 }
 
 #close-modal-amount-option-select-button {
