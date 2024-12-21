@@ -73,7 +73,7 @@
     border-radius: 63px;
     height: 60px;
     min-height: 9vh;
-    width: 36vw;
+    width: 29vw;
     margin-top: 23.7px;
     border: 0;
 }
@@ -95,7 +95,7 @@
     font-weight: bold;
     -webkit-tap-highlight-color: transparent;
     border-radius: 63px;
-    margin-left: 13px;
+    margin-left: 1vw;
     margin-top: 13px;
     font-size: 11px;
 }
