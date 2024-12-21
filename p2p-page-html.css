@@ -148,6 +148,7 @@
     display: flex;
     flex-direction: row;
     margin-left: 23.1px;
+    padding-right: 2vw;
 }
 
 .p2p-page-html-further-filters .p2p-selection-options select {
@@ -219,6 +220,7 @@
 }
 
 .buyer-info, .seller-info {
+    border: 0;
     display: flex;
     flex-direction: column;
     align-items: left;
