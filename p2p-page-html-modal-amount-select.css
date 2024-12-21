@@ -75,10 +75,6 @@
     height: auto;
 }
 
-.amount-option-select-modal-number-input-div form {
-    width: 100%;
-}
-
 .amount-option-select-modal-number-input-div input {
     width: 70%;
     font-size: 14px;
