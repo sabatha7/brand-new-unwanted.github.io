@@ -27,7 +27,10 @@
                 <span id="close-modal-amount-option-select-button" class="close-button" onclick="closeModalAmountOptionSelect()">&times;</span>
             </div>
             <div class="amount-option-select-modal-number-input-div">
-                <input min="1" type="number" id="amount-option-select" name="amount-option-select" oninput="" required>
+                <input min="1" type="number" id="amount-option-select" name="amount-option-select" oninput="" required disabled>
+            </div>
+            <div class="amount-option-select-modal-number-slider-input-div">
+                <input type="range" id="slider-picker" name="slider-picker" min="1" max="10000" value="1" oninput="this.nextElementSibling.value = this.value">
             </div>
             <div class="modal-amount-option-select-buttons">
                 <button type="button" id="modal-amount-option-select-reset-button">Reset</button>

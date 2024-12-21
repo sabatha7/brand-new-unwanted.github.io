@@ -40,8 +40,8 @@
     border: 1px solid #ccc;
     background-color: #fff;
     border-radius: 63px;
-    height: 3vh;
-    width: 13vw;
+    height: 4vh;
+    width: 17vw;
 }
 
 #modal-amount-option-select-enter-button {
@@ -50,8 +50,8 @@
     color: #fff;
     background-color: black;
     margin-left: 5.7px;
-    height: 3vh;
-    width: 13vw;
+    height: 4vh;
+    width: 17vw;
 }
 
 #close-modal-amount-option-select-button {
@@ -79,5 +79,15 @@
     width: 70%;
     font-size: 14px;
     height: 4.1vh;
+    margin-left: 11%;
+}
+
+.amount-option-select-modal-number-slider-input-div {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.amount-option-select-modal-number-slider-input-div input {
     margin-left: 11%;
 }
