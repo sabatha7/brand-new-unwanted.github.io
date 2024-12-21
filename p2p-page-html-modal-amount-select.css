@@ -22,7 +22,8 @@
     position: fixed;
     bottom: 0;
     margin: 0;
-    height:17.1vh;
+    min-height:17.1vh;
+    padding-bottom: 1.5vh;
 }
 
 .modal-amount-option-select-buttons {
