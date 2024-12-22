@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="p2p-page-html.css">
     <link rel="stylesheet" href="dynamic-island.css">
     <link rel="stylesheet" href="p2p-page-html-modal-amount-select.css">
+    <link rel="stylesheet" href="p2p-page-html-modal-p2p-buy-sell-modal.css">
 </head>
 
 <body>
@@ -19,6 +20,121 @@
             <button id="ads">Ads</button>
             <button id="chat">Chat</button>
             <button id="profile">Profile</button>
+        </div>
+    </div>
+    <div id="p2p-page-html-buy-sell-modal" class="modal">
+        <div class="modal-content">
+            <div class="p2p-page-html-buy-sell-modal-back-button">
+                <div>
+                    <button><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc. --><path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256 246.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z"/></svg></button>
+                </div>
+                <div class="p2p-page-html-buy-sell-modal-action">
+                    <div class="p2p-page-html-buy-sell-modal-action-label">
+                        <small>Buy Eth</small>
+                    </div>
+                    <div class="p2p-page-html-buy-sell-modal-action-details">
+                        <small>Unit price R60143.58</small>
+                        <small>00:49</small>
+                    </div>
+                </div>
+            </div>
+            <div class="p2p-page-html-buy-sell-modal-amount-quantity">
+                <div class="buy-sell-at-market-nav-option">
+                    <input type="radio" id="amount-radio" name="market-option" checked>
+                    <label for="amount-radio">Amount</label>
+                    <input type="radio" id="quantity-radio" name="market-option">
+                    <label for="quantity-radio" id="buy-sell-at-market-nav-option-quantity-label">Quantity</label>
+                </div>
+
+                <div class="input-group">
+                    <input type="number" id="" placeholder="0">
+                    <small>ZAR</small>
+                    <button id="">Max</button>
+                </div>
+
+                <div class="p2p-page-html-buy-sell-modal-amount-quantity-order-info">
+                    <small id="order-limits">Order limit: 5.00 - 1000 ZAR</small>
+                </div>
+                <div class="p2p-page-html-buy-sell-modal-amount-quantity-order-info">
+                    <small>You receive: 0.000000 ETH</small>
+                </div>
+            </div>
+            <div class="p2p-page-html-buy-sell-modal-fulfillment-method">
+                <div class="p2p-page-html-buy-sell-modal-fulfillment-method-label">
+                    <small>Fulfilement method </small><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc. --><path d="M464 256A208 208 0 1 0 48 256a208 208 0 1 0 416 0zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zm169.8-90.7c7.9-22.3 29.1-37.3 52.8-37.3l58.3 0c34.9 0 63.1 28.3 63.1 63.1c0 22.6-12.1 43.5-31.7 54.8L280 264.4c-.2 13-10.9 23.6-24 23.6c-13.3 0-24-10.7-24-24l0-13.5c0-8.6 4.6-16.5 12.1-20.8l44.3-25.4c4.7-2.7 7.6-7.7 7.6-13.1c0-8.4-6.8-15.1-15.1-15.1l-58.3 0c-3.4 0-6.4 2.1-7.5 5.3l-.4 1.2c-4.4 12.5-18.2 19-30.6 14.6s-19-18.2-14.6-30.6l.4-1.2zM224 352a32 32 0 1 1 64 0 32 32 0 1 1 -64 0z"/></svg>
+                </div>
+                <div class="p2p-page-html-buy-sell-modal-fulfillment-method-select">
+                    <select name="select-p2p-page-html-buy-sell-modal-fulfillment-method" id="select-p2p-page-html-buy-sell-modal-fulfillment-method">
+                        <option value="bank-transfer" selected>Bank transfer</option>
+                    </select>
+                </div>
+            </div>
+            <div class="p2p-page-html-buy-sell-modal-maker-info">
+                <div class="p2p-page-html-buy-sell-modal-maker-info-div">
+                    <small id="maker-info-heading">Maker info</small>
+                </div>
+                <div class="p2p-page-html-buy-sell-modal-maker-info-div p2p-page-html-buy-sell-modal-maker-info-payment-window">
+                    <div class="p2p-page-html-buy-sell-modal-maker-info-div-label">
+                        <small>payment window </small><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc. --><path d="M464 256A208 208 0 1 0 48 256a208 208 0 1 0 416 0zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zm169.8-90.7c7.9-22.3 29.1-37.3 52.8-37.3l58.3 0c34.9 0 63.1 28.3 63.1 63.1c0 22.6-12.1 43.5-31.7 54.8L280 264.4c-.2 13-10.9 23.6-24 23.6c-13.3 0-24-10.7-24-24l0-13.5c0-8.6 4.6-16.5 12.1-20.8l44.3-25.4c4.7-2.7 7.6-7.7 7.6-13.1c0-8.4-6.8-15.1-15.1-15.1l-58.3 0c-3.4 0-6.4 2.1-7.5 5.3l-.4 1.2c-4.4 12.5-18.2 19-30.6 14.6s-19-18.2-14.6-30.6l.4-1.2zM224 352a32 32 0 1 1 64 0 32 32 0 1 1 -64 0z"/></svg>
+                    </div>
+                    <div class="p2p-page-html-buy-sell-modal-maker-info-div-details">
+                        <small>15 mins</small>
+                    </div>
+                </div>
+                <div class="p2p-page-html-buy-sell-modal-maker-info-div p2p-page-html-buy-sell-modal-maker-info-email">
+                    <div class="p2p-page-html-buy-sell-modal-maker-info-div-label">
+                        <small>maker</small>
+                    </div>
+                    <div class="p2p-page-html-buy-sell-modal-maker-info-div-details">
+                        <small>yet***@gmail.com </small> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc. --><path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"/></svg>
+                    </div>
+                </div>
+                <div class="p2p-page-html-buy-sell-modal-maker-info-div p2p-page-html-buy-sell-modal-maker-info-status">
+                    <div class="p2p-page-html-buy-sell-modal-maker-info-div-label">
+                        <small>Status</small>
+                    </div>
+                    <div class="p2p-page-html-buy-sell-modal-maker-info-div-details">
+                        <small>Online</small>
+                    </div>
+                </div>
+            </div>
+            <div class="p2p-page-html-buy-sell-modal-footer">
+                <small id="oky-p2p-exchanging-legal-disclaimer">By proceeding, you have read and agree to our <a href="">OKY p2p exchanging legal disclaimer</a></small>
+                <button id="buy-with-0-fees-button" class="buy-sell-modal-button" disabled>Buy Eth with 0 fees</button>    
+            </div>
+        </div>
+        <div class="modal-content inactive-buy-sell-modal-content">
+            <small>Pending your payment</small>
+            <small>Pay within 14:08</small>
+            <div>
+                <!-- chat wizzard-->
+                <div class="chat-info">
+                    <div class="profile-picture-wrapper">
+                        <img class="profile-picture profile-picture-online" src="https://picsum.photos/50">
+                    </div>
+                    <div class="chat-info-chat-details">
+                        <div class="chat-message-header">
+                            <div class="chat-email-or-name">
+                                <small>luc***@gmail.com</small>
+                            </div>
+                            <div class="chat-timestamp">
+                                <button>chat</button>
+                            </div>
+                        </div>
+                        <small>Don't mark paid if non payment was made. we are online 24/7</small>
+                    </div>
+                </div>
+            </div>
+            <small>Buy Eth</small>
+            <small>Order id</small>
+            <small>Unit price</small>
+            <small>Quantity</small>
+            <small>Order amount</small>
+            <small>Fulfilement method</small>
+            <div>
+                <small>reminder</small>
+                <small>Pay with your own bank account/wallet. If the name doesn't match your OKY account name, the seller will not be able to transfer the funds. You will have to bear any refund fees that may apply.</small>
+            </div>
         </div>
     </div>
     <div id="amount-option-select-modal" class="modal-amount-option-select">
@@ -218,6 +334,7 @@
     <script src="p2p-page-html.js" defer></script>
     <script src="p2p-tab-content-toggle.js" defer></script>
     <script src="p2p-page-html-modal-amount-select.js" defer></script>
+    <script src="p2p-page-html-buy-sell-modal.js" defer></script>
 </body>
 
 </html>

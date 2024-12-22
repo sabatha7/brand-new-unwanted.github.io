@@ -1,0 +1,244 @@
+#p2p-page-html-buy-sell-modal {
+    display: none;
+    position: sticky;
+    z-index: 20001;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: auto;
+    background: transparent;
+    padding: 0;
+    margin: 0;
+    background-color: #fefefe;
+}
+
+#p2p-page-html-buy-sell-modal .modal-content {
+    background-color: #fefefe;
+    width: 100%;
+    height: 100%;
+    margin-left: 2.1vw;
+    margin-right: 2.1vw;
+    padding-bottom: 1.1vh;
+}
+
+#p2p-page-html-buy-sell-modal .inactive-buy-sell-modal-content {
+    display: none;
+}
+
+.p2p-page-html-buy-sell-modal-back-button {
+    margin-top: 3vh;
+    width: inherit;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.p2p-page-html-buy-sell-modal-back-button button {
+    background: transparent;
+    border: 0;
+    margin-left: 2.1vw;
+}
+
+.p2p-page-html-buy-sell-modal-back-button svg {
+    width: 4.2vw;
+    height: 4.2vw;
+}
+
+.p2p-page-html-buy-sell-modal-action {
+    margin-left: 3.1vh;
+}
+
+.p2p-page-html-buy-sell-modal-amount-quantity {
+    background: #f5f2f2;
+    border-radius: 13.1px;
+    height: 29.1vh;
+    margin-top: 3vh;
+    width: inherit;
+}
+
+.p2p-page-html-buy-sell-modal-amount-quantity .input-group {
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid #0f7ae5;
+    position: relative;
+    margin-left: 2.1vw;
+    margin-right: 4.1vw;
+    height: 11vh;
+    align-items: center;
+}
+
+.p2p-page-html-buy-sell-modal-amount-quantity .input-group input {
+    border: 0;
+    background: transparent;
+    width: 65%;
+}
+
+.p2p-page-html-buy-sell-modal-amount-quantity .input-group button {
+    border: 0;
+    background: transparent;
+    width: 20%;
+    color: #0f7ae5;    
+    border-left: 1px solid #ccc;
+}
+
+.p2p-page-html-buy-sell-modal-amount-quantity .input-group small {
+    border: 0;
+    background: transparent;
+    width: 15%;
+}
+
+.p2p-page-html-buy-sell-modal-amount-quantity .buy-sell-at-market-nav-option {
+    display: flex;
+    flex-direction: row;
+    padding-top: 3vh !important;
+    margin-left: 2.1vw;
+    margin-right: 4.1vw;
+    width: 100%;
+    height: auto;
+}
+
+.p2p-page-html-buy-sell-modal-amount-quantity .buy-sell-at-market-nav-option input[type="radio"] {
+    display: none;
+}
+
+.p2p-page-html-buy-sell-modal-amount-quantity .buy-sell-at-market-nav-option label {
+    text-align: center;
+}
+
+.p2p-page-html-buy-sell-modal-amount-quantity .buy-sell-at-market-nav-option #buy-sell-at-market-nav-option-quantity-label {
+    margin-left: 4vw;
+}
+
+.p2p-page-html-buy-sell-modal-amount-quantity .buy-sell-at-market-nav-option input[type="radio"]:checked + label {
+    border-bottom: 1px solid #ccc;
+}
+
+.p2p-page-html-buy-sell-modal-amount-quantity-order-info {
+    margin-left: 2.1vw;
+    margin-right: 4.1vw;
+    width: 100%;
+    height: auto;
+    margin-top: 1.1vh;
+}
+
+.p2p-page-html-buy-sell-modal-amount-quantity-order-info #order-limits {
+    color: #999;
+}
+
+.p2p-page-html-buy-sell-modal-fulfillment-method {
+    margin-top: 2.4vh;
+    width: inherit;
+    background: #f5f2f2;
+    border-radius: 13.1px;
+    height: 10.1vh;
+    padding-top: 2.1vh;
+}
+
+.p2p-page-html-buy-sell-modal-fulfillment-method-label {
+    display: flex;
+    flex-direction: row;
+    margin-left: 2.1vw;
+}
+
+.p2p-page-html-buy-sell-modal-fulfillment-method-label small {
+    color: #999;
+    /*text-decoration: dotted underline;*/
+}
+
+.p2p-page-html-buy-sell-modal-fulfillment-method-label svg {
+    width: 4.2vw;
+    height: 4.2vw;
+    margin-left: 1.3vw;
+    fill: #999;    
+}
+
+.p2p-page-html-buy-sell-modal-fulfillment-method-select {
+    display: flex;
+    flex-direction: row;
+    margin-left: 2.1vw;
+    margin-top: 2.1vh;
+}
+
+.p2p-page-html-buy-sell-modal-maker-info {
+    margin-top: 2.4vh;
+    width: inherit;
+}
+
+.p2p-page-html-buy-sell-modal-maker-info-div {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-left: 2.1vw;
+    position: relative;
+    margin-top: 2.1vh;
+}
+
+.p2p-page-html-buy-sell-modal-maker-info-div-label {
+    width: 39%;
+    display: flex;
+    flex-direction: row;
+}
+
+.p2p-page-html-buy-sell-modal-maker-info-div-label svg {
+    width: 4.2vw;
+    height: 4.2vw;
+    margin-left: 1.3vw;
+}
+
+.p2p-page-html-buy-sell-modal-maker-info-div-details {
+    width: 57.1%;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+}
+
+.p2p-page-html-buy-sell-modal-maker-info-div-details svg {
+    width: 4.2vw;
+    height: 4.2vw;
+    margin-left: 0.9vw;
+}
+
+.p2p-page-html-buy-sell-modal-maker-info #maker-info-heading {
+    font-weight: bold;
+}
+
+#p2p-page-html-buy-sell-modal #oky-p2p-exchanging-legal-disclaimer {
+    display:block;
+    margin-top: 3.3vh;
+}
+
+#p2p-page-html-buy-sell-modal #oky-p2p-exchanging-legal-disclaimer a {
+    text-decoration: dotted underline;
+    color: #000;
+}
+
+#p2p-page-html-buy-sell-modal #oky-p2p-exchanging-legal-disclaimer a:visited {
+}
+
+#p2p-page-html-buy-sell-modal #oky-p2p-exchanging-legal-disclaimer a:active {
+}
+
+#p2p-page-html-buy-sell-modal #buy-with-0-fees-button {
+    background: #000;
+    color: #fff;
+    display: block;
+    margin-top: 2.3vh;
+    text-align: center;
+    width: 100%;
+    height: 9vh;
+    border-radius: 26.1px;
+    position: absolute;
+}
+
+.p2p-page-html-buy-sell-modal-footer {
+    height: 9.3vh;
+    background: #fff;
+    bottom: 0;
+    position: sticky;
+    width: inherit;
+    left: 0;
+    right: 0;
+}
