@@ -122,7 +122,7 @@
 
 .p2p-page-html-top-row .options-currency-selection select {
     position: absolute;
-    padding: 11px;
+    padding: 0;
     cursor: pointer;
     text-align: center;
     font-weight: bold;
@@ -130,10 +130,10 @@
     background: transparent;
     border-radius: 63px;
     border: 1px solid #ccc;
-    height: 6.1vh;
+    height: 6.9vh;
     width: 17.1vw;
     margin-top: 33px;
-    font-size: 9px;
+    font-size: 31%;
     margin-right: 21.3px;
 }
 
