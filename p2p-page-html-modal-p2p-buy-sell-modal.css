@@ -21,7 +21,7 @@
     height: 100%;
     margin-left: 2.1vw;
     margin-right: 2.1vw;
-    padding-bottom: 1.1vh;
+    padding-bottom: 8.1vh;
 }
 
 #p2p-page-html-buy-sell-modal .inactive-buy-sell-modal-content {
@@ -178,8 +178,6 @@
 
 .p2p-page-html-buy-sell-modal-maker-info-div-label {
     width: 39%;
-    display: flex;
-    flex-direction: row;
 }
 
 .p2p-page-html-buy-sell-modal-maker-info-div-label svg {
@@ -190,9 +188,7 @@
 
 .p2p-page-html-buy-sell-modal-maker-info-div-details {
     width: 57.1%;
-    display: flex;
-    justify-content: flex-end;
-    flex-direction: row;
+    text-align: right;
 }
 
 .p2p-page-html-buy-sell-modal-maker-info-div-details svg {
@@ -207,7 +203,7 @@
 
 #p2p-page-html-buy-sell-modal #oky-p2p-exchanging-legal-disclaimer {
     display:block;
-    margin-top: 3.3vh;
+    margin-top: 11.3vh;
 }
 
 #p2p-page-html-buy-sell-modal #oky-p2p-exchanging-legal-disclaimer a {
@@ -230,15 +226,7 @@
     width: 100%;
     height: 9vh;
     border-radius: 26.1px;
-    position: absolute;
 }
 
 .p2p-page-html-buy-sell-modal-footer {
-    height: 9.3vh;
-    background: #fff;
-    bottom: 0;
-    position: sticky;
-    width: inherit;
-    left: 0;
-    right: 0;
 }
