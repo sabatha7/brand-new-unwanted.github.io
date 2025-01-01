@@ -11,3 +11,11 @@ body {
     font-size: 4.9vw;
     
 }
+
+.child-element-for-row-dynamic-island-cmd {
+    width: 100%;
+}
+
+.hidden-child-element-for-row-dynamic-island-cmd {
+    display: none;
+}
