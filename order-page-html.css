@@ -57,7 +57,7 @@
 }
 .order-page-html-nav-bar .orders-tab-selection {
     width: 100%;
-    height: 4vh;
+    height: 6vh;
     display: flex;
     flex-direction: row;
     border-bottom: 1px solid #ccc;
@@ -78,6 +78,7 @@
 
 .orders-tab-options label {
     margin-top: 0.5vh;
+    padding-bottom: 2vh;
 }
 
 .orders-tab-options label:last-child {
@@ -95,6 +96,7 @@
     justify-content: flex-end;
     align-items: center;
     padding-right: 9.1vw;
+    padding-bottom: 2vh;
 }
 
 .order-page-html-nav-bar-filter-icon svg {
@@ -229,8 +231,10 @@
     justify-content: center;
     align-items: center;
     border-radius: 14px;
-    width: 9.9vw;
-    height: 8.1vw;
+    width: 11.9vw;
+    height: 9.1vw;
+    min-width: 39.1px;
+    min-height: 31.1px;
 }
 
 .order-page-html-tab-content .order-chat-button svg {
