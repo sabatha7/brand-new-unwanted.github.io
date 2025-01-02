@@ -33,8 +33,8 @@
     background: transparent;
     display: flex;
     align-items: center;
-    margin-left: 2.1vw;
     border: 0;
+    padding-left: 0;
 }
 
 .order-page-html-back-button-actions .order-page-html-title {
