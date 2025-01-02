@@ -6,6 +6,54 @@
     width: 100%;
     background: #fff;
     position: fixed;
+    height: auto;
+    z-index: 1;
+}
+
+.order-page-html-nav-bar .order-page-html-back-button-actions {
+    margin-top: 3vh;
+    height: 4vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 23.1px;
+}
+
+.order-page-html-nav-bar .order-page-html-back-button-actions svg {
+    width: 4.2vw;
+    height: 4.2vw;
+}
+
+.order-page-html-back-button-actions .order-page-html-back-button {
+    width: 15%;
+}
+
+.order-page-html-back-button-actions .order-page-html-back-button button {
+    background: transparent;
+    display: flex;
+    align-items: center;
+    margin-left: 2.1vw;
+    border: 0;
+}
+
+.order-page-html-back-button-actions .order-page-html-title {
+    width: 55%;
+    text-align: center;
+    font-size: 5.1vw;
+}
+
+.order-page-html-back-button-actions .order-page-html-action-reporting-counterparty {
+    width: 15%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding-right: 5.9vw;
+}
+
+.order-page-html-back-button-actions .order-page-html-action-action-searching {
+    width: 15%;
+    margin-right: 6.1vw;
 }
 .order-page-html-nav-bar .orders-tab-selection {
     width: 100%;
@@ -14,6 +62,7 @@
     flex-direction: row;
     border-bottom: 1px solid #ccc;
     font-size: 3.1vh;
+    margin-top: 3.1vh;
 }
 
 .orders-tab-options {
@@ -39,10 +88,25 @@
     border-bottom: 1vw solid #000;
 }
 
+.order-page-html-nav-bar-filter-icon {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 9.1vw;
+}
+
+.order-page-html-nav-bar-filter-icon svg {
+    width: 15.1px;
+    height: 15.1px;
+}
+
 .order-page-html-nav-bar .orders-rows-filter {
     width: 100%;
     padding-left: 23.1px;
-    padding-bottom: 1vh;
+    padding-bottom: 0.1vh;
+    padding-top: 0.9vh;
 }
 
 .order-page-html-nav-bar .disabled-orders-rows-filter {
@@ -61,7 +125,7 @@
 
 .order-page-html-tab-content {
     position: absolute;
-    margin-top: 11.1vh;
+    margin-top: 21.1vh;
 }
 
 .order-page-html-tab-content .order-list {
