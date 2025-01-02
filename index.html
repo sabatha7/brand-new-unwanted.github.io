@@ -6,20 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OKY p2p</title>
     <link rel="stylesheet" href="ux.css">
-    <link rel="stylesheet" href="p2p-page-html.css">
     <link rel="stylesheet" href="dynamic-island.css">
+
+    <link rel="stylesheet" href="p2p-page-html.css">
     <link rel="stylesheet" href="p2p-page-html-modal-amount-select.css">
     <link rel="stylesheet" href="p2p-page-html-modal-p2p-buy-sell-modal.css">
+
+    <link rel="stylesheet" href="order-page-html.css">
+    <link rel="stylesheet" href="order-page-html-maximise-this-order-modal.css">
 </head>
 
 <body>
     <div class="row-dynamic-island">
         <div class="dynamic-island">
-            <button id="p2p">P2P</button>
-            <button id="orders">Orders</button>
-            <button id="ads">Ads</button>
-            <button id="chat">Chat</button>
-            <button id="profile">Profile</button>
+            <button id="p2p" class="dynamic-island-button">P2P</button>
+            <button id="orders" class="dynamic-island-button">Orders</button>
+            <button id="ads" class="dynamic-island-button">Ads</button>
+            <button id="chat" class="dynamic-island-button">Chat</button>
+            <button id="profile" class="dynamic-island-button">Profile</button>
         </div>
     </div>
     <div class="child-element-for-row-dynamic-island-cmd">
@@ -104,39 +108,6 @@
                 <small id="oky-p2p-exchanging-legal-disclaimer">By proceeding, you have read and agree to our <a href="">OKY p2p exchanging legal disclaimer</a></small>
                 <button id="buy-with-0-fees-button" class="buy-sell-modal-button" disabled>Buy Eth with 0 fees</button>    
     
-            </div>
-            <div class="modal-content inactive-buy-sell-modal-content">
-                <small>Pending your payment</small>
-                <small>Pay within 14:08</small>
-                <div>
-                    <!-- chat wizzard-->
-                    <div class="chat-info">
-                        <div class="profile-picture-wrapper">
-                            <img class="profile-picture profile-picture-online" src="https://picsum.photos/50">
-                        </div>
-                        <div class="chat-info-chat-details">
-                            <div class="chat-message-header">
-                                <div class="chat-email-or-name">
-                                    <small>luc***@gmail.com</small>
-                                </div>
-                                <div class="chat-timestamp">
-                                    <button>chat</button>
-                                </div>
-                            </div>
-                            <small>Don't mark paid if non payment was made. we are online 24/7</small>
-                        </div>
-                    </div>
-                </div>
-                <small>Buy Eth</small>
-                <small>Order id</small>
-                <small>Unit price</small>
-                <small>Quantity</small>
-                <small>Order amount</small>
-                <small>Fulfilement method</small>
-                <div>
-                    <small>reminder</small>
-                    <small>Pay with your own bank account/wallet. If the name doesn't match your OKY account name, the seller will not be able to transfer the funds. You will have to bear any refund fees that may apply.</small>
-                </div>
             </div>
         </div>
         <div id="amount-option-select-modal" class="modal-amount-option-select">
@@ -356,7 +327,7 @@
                 </div>
                 <div class="order-page-html-maximise-this-order-modal-chat-action-and-preview">
                     <div>
-                        <img>
+                        <img class="">
                     </div>
                     <div>
                         <div>
@@ -427,7 +398,6 @@
                         <button>Get payment details</button>
                     </div>
                 </div>
-                <div class="order-page-html-maximise-this-order-modal-footer">
             </div>
             <div class="order-page-html-maximise-this-order-modal-modal-content inactive-order-page-html-maximise-this-order-modal-modal-content">
                 <div class="order-page-html-maximise-this-order-modal-back-button">
@@ -540,7 +510,6 @@
                         <button>I have paid</button> <small>How to pay?</small>
                     </div>
                 </div>
-                <div class="order-page-html-maximise-this-order-modal-footer">
             </div>
             <div class="order-page-html-maximise-this-order-modal-modal-content inactive-order-page-html-maximise-this-order-modal-modal-content">
                 <div class="order-page-html-maximise-this-order-modal-back-button">
@@ -669,6 +638,7 @@
                     </div>
                 </div>
                 <div class="order-page-html-maximise-this-order-modal-footer">
+                </div>
             </div>
             <div class="order-page-html-maximise-this-order-modal-modal-content inactive-order-page-html-maximise-this-order-modal-modal-content">
                 <div class="order-page-html-maximise-this-order-modal-back-button">
@@ -801,20 +771,19 @@
                         <button>View assets</button>
                     </div>
                 </div>
-                <div class="order-page-html-maximise-this-order-modal-footer">
             </div>
         </div>
-        <div class="orders-top-row">
-            <div class="orders-nav-option">
-                <input type="radio" id="pending-orders-radio" name="orders-tab" checked>
-                <label for="pending-orders-radio">Pending</label>
-                <input type="radio" id="completed-orders-radio" name="orders-tab">
-                <label for="completed-orders-radio">Completed</label>
+        <div class="order-page-html-nav-bar">
+            <div class="orders-tab-selection">
+                <div class="orders-tab-options">
+                    <input type="radio" id="pending-orders-radio" name="orders-tabs-browser-tool" checked>
+                    <label for="pending-orders-radio">Pending</label>
+                    <input type="radio" id="completed-orders-radio" name="orders-tabs-browser-tool">
+                    <label for="completed-orders-radio">Completed</label>
+                </div>
             </div>
-        </div>
-        <div class="tab-content">
-            <div class="tab-pane active" id="pending-orders-content">
-                <div class="orders-rows-filter">
+            <div class="order-page-html-nav-bar-additional-filter">
+                <div class="orders-rows-filter orders-rows-filter-for-pending-orders">
                     <div class="selection-options order-type-of">
                         <select class="order-type-of-select" name="order-type-of-select">
                             <option value="all">All</option>
@@ -823,74 +792,85 @@
                         </select>
                     </div>
                 </div>
+                <div class="orders-rows-filter orders-rows-filter-for-completed-orders disabled-orders-rows-filter">
+                    <div class="selection-options order-type-of">
+                        <select class="order-type-of-select" name="order-type-of-select">
+                            <option value="all">All</option>
+                            <option value="fulfilled">Fulfilled</option>
+                            <option value="cancelled">Canceled</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="order-page-html-tab-content">
+            <div class="order-page-html-tab-content-tab-pane-active" id="order-page-html-tab-content-pending-orders-content">
+                
                 <ul class="order-list order-list-pending">
                     <li>
                         <div class="order-info">
                             <div class="order-header">
                                 <div class="order-title-container">
-                                    <div class="order-title">Sell Markham</div>
+                                    <div class="order-title"><small class="order-title-container-sell">Sell</small> Markham</div>
                                 </div>
                                 <div class="order-status-container">
-                                    <div class="order-status">In progress ></div>
+                                    <div class="order-status"><small class="order-page-html-tab-content-muted-text">In progress</small> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc. --><path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"/></svg></div>
                                 </div>
                             </div>
-                            <small>11/25/2024, 11h15</small>
+                            <div class="order-time-create-date">
+                                <small class="order-page-html-tab-content-muted-text">11/25/2024, 11h15</small>
+                            </div>
                             <div class="order-details">
-                                <div class="order-quantity">
-                                    <small>Quantity 5 items</small>
+                                <div class="unit-price">
+                                    <small class="order-page-html-tab-content-muted-text">Unit price 1.008 USD</small>
+                                    <small class="order-page-html-tab-content-muted-text">Quantity 221.58 USDT</small>
                                 </div>
                                 <div class="order-price">
-                                    <small>14000 ZAR</small>
+                                    <small>223.26 USD</small>
                                 </div>
                             </div>
                             <div class="order-chat-container">
                                 <div class="order-chat-info">
-                                    <small>bus***@yahoo.com</small>
+                                    <small class="order-page-html-tab-content-muted-text">bus***@yahoo.com</small>
                                 </div>
                                 <div class="order-chat-button">
-                                    <button>chat</button>
+                                    <button><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc. --><path d="M160 368c26.5 0 48 21.5 48 48l0 16 72.5-54.4c8.3-6.2 18.4-9.6 28.8-9.6L448 368c8.8 0 16-7.2 16-16l0-288c0-8.8-7.2-16-16-16L64 48c-8.8 0-16 7.2-16 16l0 288c0 8.8 7.2 16 16 16l96 0zm48 124l-.2 .2-5.1 3.8-17.1 12.8c-4.8 3.6-11.3 4.2-16.8 1.5s-8.8-8.2-8.8-14.3l0-21.3 0-6.4 0-.3 0-4 0-48-48 0-48 0c-35.3 0-64-28.7-64-64L0 64C0 28.7 28.7 0 64 0L448 0c35.3 0 64 28.7 64 64l0 288c0 35.3-28.7 64-64 64l-138.7 0L208 492z"/></svg></button>
                                 </div>
                             </div>
                         </div>
                     </li>
                 </ul>
             </div>
-            <div class="tab-pane" id="completed-orders-content">
-                <div class="orders-rows-filter">
-                    <div class="selection-options order-type-of">
-                        <select class="order-type-of-select" name="order-type-of-select">
-                            <option value="all">All</option>
-                            <option value="fulfilled">Fulfilled</option>
-                            <option value="canceled">Canceled</option>
-                        </select>
-                    </div>
-                </div>
+            <div class="order-page-html-tab-content-tab-pane-inactive" id="order-page-html-tab-content-completed-orders-content">
                 <ul class="order-list order-list-completed">
                     <li>
                         <div class="order-info">
                             <div class="order-header">
                                 <div class="order-title-container">
-                                    <div class="order-title">Sell Markham</div>
+                                    <div class="order-title"><small class="order-title-container-buy">Buy</small> USDT</div>
                                 </div>
                                 <div class="order-status-container">
-                                    <div class="order-status">Fulfilled ></div>
+                                    <div class="order-status"><small class="order-page-html-tab-content-muted-text">Fulfilled</small> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc. --><path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"/></svg></div>
                                 </div>
                             </div>
-                            <small>11/25/2024, 11h15</small>
+                            <div class="order-time-create-date">
+                                <small class="order-page-html-tab-content-muted-text">11/25/2024, 11h15</small>
+                            </div>
                             <div class="order-details">
-                                <div class="order-quantity">
-                                    <small>Quantity 5 items</small>
+                                <div class="unit-price">
+                                    <small class="order-page-html-tab-content-muted-text">Unit price 1.008 USD</small>
+                                    <small class="order-page-html-tab-content-muted-text">Quantity 221.58 USDT</small>
                                 </div>
                                 <div class="order-price">
-                                    <small>14000 ZAR</small>
+                                    <small>223.26 USD</small>
                                 </div>
                             </div>
                             <div class="order-chat-container">
                                 <div class="order-chat-info">
-                                    <small>bus***@yahoo.com</small>
+                                    <small class="order-page-html-tab-content-muted-text">bus***@yahoo.com</small>
                                 </div>
                                 <div class="order-chat-button">
-                                    <button>chat</button>
+                                    <button><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc. --><path d="M160 368c26.5 0 48 21.5 48 48l0 16 72.5-54.4c8.3-6.2 18.4-9.6 28.8-9.6L448 368c8.8 0 16-7.2 16-16l0-288c0-8.8-7.2-16-16-16L64 48c-8.8 0-16 7.2-16 16l0 288c0 8.8 7.2 16 16 16l96 0zm48 124l-.2 .2-5.1 3.8-17.1 12.8c-4.8 3.6-11.3 4.2-16.8 1.5s-8.8-8.2-8.8-14.3l0-21.3 0-6.4 0-.3 0-4 0-48-48 0-48 0c-35.3 0-64-28.7-64-64L0 64C0 28.7 28.7 0 64 0L448 0c35.3 0 64 28.7 64 64l0 288c0 35.3-28.7 64-64 64l-138.7 0L208 492z"/></svg></button>
                                 </div>
                             </div>
                         </div>
@@ -908,6 +888,10 @@
     <script src="p2p-tab-content-toggle.js" defer></script>
     <script src="p2p-page-html-modal-amount-select.js" defer></script>
     <script src="p2p-page-html-buy-sell-modal.js" defer></script>
+
+    <script src="order-page-html.js" defer></script>
+
+    <script src="dynamic-island.js" defer></script>
 </body>
 
 </html>

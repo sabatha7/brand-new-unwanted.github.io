@@ -1,0 +1,175 @@
+.order-page-html-tab-content-muted-text {
+    color: #adadad;
+}
+
+.order-page-html-nav-bar {
+    width: 100%;
+    background: #fff;
+    position: fixed;
+}
+.order-page-html-nav-bar .orders-tab-selection {
+    width: 100%;
+    height: 4vh;
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid #ccc;
+    font-size: 3.1vh;
+}
+
+.orders-tab-options {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    padding-left: 23.1px;
+}
+
+.orders-tab-options input[type="radio"] {
+    display: none;
+}
+
+.orders-tab-options label {
+    margin-top: 0.5vh;
+}
+
+.orders-tab-options label:last-child {
+    margin-left: 4.1vw;
+}
+
+.orders-tab-options input[type="radio"]:checked + label {
+    border-bottom: 1vw solid #000;
+}
+
+.order-page-html-nav-bar .orders-rows-filter {
+    width: 100%;
+    padding-left: 23.1px;
+    padding-bottom: 1vh;
+}
+
+.order-page-html-nav-bar .disabled-orders-rows-filter {
+    display: none;
+}
+
+.order-page-html-tab-content-tab-pane-inactive {
+    display: none;
+}
+
+.order-page-html-tab-content .order-page-html-tab-content-tab-pane-active {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.order-page-html-tab-content {
+    position: absolute;
+    margin-top: 11.1vh;
+}
+
+.order-page-html-tab-content .order-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.order-page-html-tab-content .order-list li {
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.order-page-html-tab-content .order-info {
+    border: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    margin-left: 23.1px;
+    padding-right: 20px;
+    border-bottom: 1px solid #ccc;
+    border-radius: 5px;
+    width: 84vw;
+    margin-right: 1vw;
+    padding-bottom: 3vh;
+}
+
+.order-page-html-tab-content .order-header {
+    display: flex;
+    flex-direction: row;
+}
+
+.order-page-html-tab-content .order-title-container-sell {
+    color: salmon;
+}
+
+.order-page-html-tab-content .order-title-container-buy {
+    color: green;
+}
+
+.order-page-html-tab-content .order-title-container {
+    width: 50%;
+}
+
+.order-page-html-tab-content .order-status-container {
+    width: 50%;
+    text-align: right;
+}
+
+.order-page-html-tab-content svg {
+    width: 12px;
+    height: 12px;
+}
+
+.order-page-html-tab-content .order-time-create-date {
+    display: flex;
+    flex-direction: row;
+}
+
+.order-page-html-tab-content .order-details {
+    margin-top: 1vh;
+    display: flex;
+    flex-direction: row;
+}
+
+.order-page-html-tab-content .unit-price {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.order-page-html-tab-content .order-price {
+    width: 50%;
+    text-align: right;
+}
+
+.order-page-html-tab-content .order-chat-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.order-page-html-tab-content .order-chat-info {
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.order-page-html-tab-content .order-chat-button {
+    width: 50%;
+    text-align: right;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.order-page-html-tab-content .order-chat-button button {
+    display: flex;
+    background: transparent;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border-radius: 14px;
+    width: 9.9vw;
+    height: 8.1vw;
+}
+
+.order-page-html-tab-content .order-chat-button svg {
+    width: 61%;
+    height: 61%;
+}
