@@ -1,0 +1,134 @@
+.ads-page-html-activity-toggle-action-row {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.ads-page-html-activity-toggle-action-row .ads-page-html-activity-toggle-action-row-div {
+    width: 89.1%;
+    border-radius: 13px;
+    background: #e4e0e0;
+    display: flex;
+    flex-direction: row;
+    margin-top: 3vh;
+}
+
+.ads-page-html-activity-toggle-action-row .ads-page-html-activity-toggle-action-row-ads-status-info {
+    width: 75%;
+    text-align: left;
+    padding-left: 3.3vw;
+}
+
+.ads-page-html-activity-toggle-action-row .ads-page-html-activity-toggle-action-row-ads-status-info-inactive {
+    display: none;
+}
+
+.ads-page-html-activity-toggle-action input[type="radio"] {
+    display: none;
+}
+
+.ads-page-html-activity-toggle-action-row .ads-page-html-activity-toggle-action-action-div {
+    width: 25%;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.ads-page-html-activity-toggle-action {
+    display: flex;
+    flex-direction: row;
+    background: #b8b7b7;
+    border-radius: 13px;
+    height: 5.1vh;
+    width: 21.1vw;
+    margin-right: 1.9vw;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.ads-page-html-activity-toggle-action label {
+    width: 31.1%;
+    height: 69.1%;
+    background: transparent;
+    border-radius: 50%;
+    margin: 7.1%;
+}
+
+.ads-page-html-activity-toggle-action input[type="radio"]:checked + label {
+    background: #fff;
+}
+
+.ads-page-html-nav-bar-additional-filter {
+    width: 100%;
+    padding-left: 23.1px;
+    display: flex;
+}
+
+.ads-page-html-nav-bar-additional-filter-ads-selection-options {
+    display: flex;
+    flex-direction: row;
+    margin-top: 0.9vh;
+}
+
+.ad-details .unit-price {
+    width: 100%;
+    display: flex;
+    margin-top: 1.1vh;
+}
+
+.ads-page-html-fulfilement-info-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+}
+
+.ads-opt-active-or-inactive-ad-buttons-div {
+    width: 45%;
+    text-align: right;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding-bottom: 0;
+    align-items: center;
+}
+
+.ads-opt-active-or-inactive-ad-buttons-div button {
+    display: flex;
+    background: transparent;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border-radius: 14px;
+    width: 11.9vw;
+    height: 9.1vw;
+    min-width: 39.1px;
+    min-height: 31.1px;
+}
+
+.ads-opt-active-or-inactive-ad-buttons-div #ads-opt-active-or-inactive-ad-button {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0;
+    padding-right: 1.5vw;
+}
+
+.ads-page-html-fulfilement-info {
+    width: 55%;
+}
+
+.info-bank-transfer-delivery-method {
+    border-left: 4px solid #f32c6e;
+    padding: 4px;
+    padding-left: 6.9px;
+}

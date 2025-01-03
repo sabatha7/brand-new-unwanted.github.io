@@ -14,6 +14,8 @@
 
     <link rel="stylesheet" href="order-page-html.css">
     <link rel="stylesheet" href="order-page-html-maximise-this-order-modal.css">
+
+    <link rel="stylesheet" href="ads-page-html.css">
 </head>
 
 <body>
@@ -828,7 +830,7 @@
                         <div class="order-info">
                             <div class="order-header">
                                 <div class="order-title-container">
-                                    <div class="order-title"><small class="order-title-container-sell">Sell</small> Markham</div>
+                                    <div class="order-title"><small class="order-title-container-sell">Sell</small> USDT</div>
                                 </div>
                                 <div class="order-status-container">
                                     <div class="order-status"><small class="order-page-html-tab-content-muted-text">In progress</small> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc. --><path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"/></svg></div>
@@ -896,7 +898,100 @@
             </div>
         </div>
     </div>
-    <div class="child-element-for-row-dynamic-island-cmd hidden-child-element-for-row-dynamic-island-cmd"></div>
+    <div class="child-element-for-row-dynamic-island-cmd hidden-child-element-for-row-dynamic-island-cmd">
+        <div class="order-page-html-nav-bar">
+            <div class="order-page-html-back-button-actions">
+                <div class="order-page-html-back-button">
+                    <button><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc. --><path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256 246.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z"/></svg></button>
+                </div>
+                <div class="order-page-html-title">
+                    <small>Ads</small>
+                </div>
+                <div class="order-page-html-action-action-searching">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc. --><path d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 144L48 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l144 0 0 144c0 17.7 14.3 32 32 32s32-14.3 32-32l0-144 144 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-144 0 0-144z"/></svg>
+                </div>
+            </div>
+            <div class="ads-page-html-activity-toggle-action-row">
+                <div class="ads-page-html-activity-toggle-action-row-div">
+                    <div class="ads-page-html-activity-toggle-action-row-ads-status-info ads-page-html-activity-toggle-action-row-ads-status-info-at-work">
+                        <small>Online</small><br/>
+                        <small class="ads-status-info-small">Available to accept orders for all your active ads.</small>
+                    </div>
+                    <div class="ads-page-html-activity-toggle-action-row-ads-status-info ads-page-html-activity-toggle-action-row-ads-status-info-non-available ads-page-html-activity-toggle-action-row-ads-status-info-inactive">
+                        <small>Offline</small><br/>
+                        <small class="ads-status-info-small">Unavailable to accept orders.</small>
+                    </div>
+                    <div class="ads-page-html-activity-toggle-action-action-div">
+                        <div class="ads-page-html-activity-toggle-action">
+                            <input type="radio" id="ads-page-html-activity-toggle-action-ads-status-offline" name="ads-page-html-activity-toggle-action-status" />
+                            <label for="ads-page-html-activity-toggle-action-ads-status-offline"><!--Offline--></label>
+                            <input type="radio" id="ads-page-html-activity-toggle-action-ads-status-online" name="ads-page-html-activity-toggle-action-status" checked />
+                            <label for="ads-page-html-activity-toggle-action-ads-status-online"><!--Online--></label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ads-page-html-nav-bar-additional-filter">
+                <div class="ads-page-html-nav-bar-additional-filter-ads-selection-options">
+                    <select name="ads-ad-type-option">
+                        <option value="" selected hidden>Type</option>
+                        <option value="all">All</option>
+                        <option value="fulfilled">Buy</option>
+                        <option value="canceled">Sell</option>
+                    </select>
+                    <select name="ads-ads-activity-status-option">
+                        <option value="" selected hidden>Status</option>
+                        <option value="all">All</option>
+                        <option value="fulfilled">Active</option>
+                        <option value="canceled">Inactive</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="order-page-html-tab-content">
+            <div class="order-page-html-tab-content-tab-pane-active" id="order-page-html-tab-content-pending-orders-content">
+                <ul class="order-list order-list-pending">
+                    <li>
+                        <div class="order-info">
+                            <div class="order-header">
+                                <div class="order-title-container">
+                                    <div class="order-title">Sell USDT/ZAR</div>
+                                </div>
+                                <div class="order-status-container">
+                                    <select name="action">
+                                        <option value="" selected hidden><!--options--></option>
+                                        <option value="details">Details</option>
+                                        <option value="share">Share</option>
+                                        <option value="delete">Delete</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="ad-details">
+                                <div class="unit-price">
+                                    <small>R 28.12</small>
+                                    <div>
+                                        <small class="order-page-html-tab-content-muted-text">Available</small> 500.00 USDT
+                                    </div>
+                                    <div>
+                                        <small class="order-page-html-tab-content-muted-text">Order limit</small> 18-14060 ZAR
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ads-page-html-fulfilement-info-container">
+                                <div class="ads-page-html-fulfilement-info">
+                                    <p class="info-bank-transfer-delivery-method">Bank transfer</p>
+                                </div>
+                                <div class="ads-opt-active-or-inactive-ad-buttons-div">
+                                    <button id="ads-opt-active-or-inactive-ad-button">· Inactive</button> <!--this is a bullet point char-->
+                                    <button><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc. --><path d="M0 416c0 17.7 14.3 32 32 32l54.7 0c12.3 28.3 40.5 48 73.3 48s61-19.7 73.3-48L480 448c17.7 0 32-14.3 32-32s-14.3-32-32-32l-246.7 0c-12.3-28.3-40.5-48-73.3-48s-61 19.7-73.3 48L32 384c-17.7 0-32 14.3-32 32zm128 0a32 32 0 1 1 64 0 32 32 0 1 1 -64 0zM320 256a32 32 0 1 1 64 0 32 32 0 1 1 -64 0zm32-80c-32.8 0-61 19.7-73.3 48L32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l246.7 0c12.3 28.3 40.5 48 73.3 48s61-19.7 73.3-48l54.7 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-54.7 0c-12.3-28.3-40.5-48-73.3-48zM192 128a32 32 0 1 1 0-64 32 32 0 1 1 0 64zm73.3-64C253 35.7 224.8 16 192 16s-61 19.7-73.3 48L32 64C14.3 64 0 78.3 0 96s14.3 32 32 32l86.7 0c12.3 28.3 40.5 48 73.3 48s61-19.7 73.3-48L480 128c17.7 0 32-14.3 32-32s-14.3-32-32-32L265.3 64z"/></svg></button>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
     <div class="child-element-for-row-dynamic-island-cmd hidden-child-element-for-row-dynamic-island-cmd"></div>
     <div class="child-element-for-row-dynamic-island-cmd hidden-child-element-for-row-dynamic-island-cmd"></div>
 
