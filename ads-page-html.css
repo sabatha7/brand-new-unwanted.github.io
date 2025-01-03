@@ -1,3 +1,11 @@
+.ads-page-html-action-action-creating {
+    width: 30%;
+    margin-right: 13.9vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
 .ads-page-html-activity-toggle-action-row {
     width: 100%;
     display: flex;
@@ -133,4 +141,8 @@
     border-left: 4px solid #f32c6e;
     padding: 4px;
     padding-left: 6.9px;
+}
+
+.ads-page-html-tab-content {
+    margin-top: 39.1vh;
 }
